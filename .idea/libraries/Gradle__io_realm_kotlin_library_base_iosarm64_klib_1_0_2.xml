@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.realm.kotlin:library-base-iosarm64:klib:1.0.2" type="kotlin.native">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm.kotlin/library-base-iosarm64/1.0.2/41d082c0761e8ac5f5f4e6935be157c29d2f290a/library-base.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm.kotlin/library-base-iosarm64/1.0.2/abc4882be2882d3420302663d4aad7d88f95ec5f/library-base-iosarm64-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

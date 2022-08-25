@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.realm.kotlin:cinterop-iosarm64:klib:cinterop-realm_wrapper:1.0.2" type="kotlin.native">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm.kotlin/cinterop-iosarm64/1.0.2/c4e1da2ca42dbe7b0ed2ad192e55b578d539e5bd/cinterop-cinterop-realm_wrapper.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm.kotlin/cinterop-iosarm64/1.0.2/71455d7fb9a5ac17ac7a62c7853203b84e783ab/cinterop-iosarm64-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

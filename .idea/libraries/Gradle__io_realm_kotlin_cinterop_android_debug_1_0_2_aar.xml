@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="Gradle: io.realm.kotlin:cinterop-android-debug:1.0.2@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9867a062bfaa8d83d6a02f4252e3eddc/transformed/cinterop-debug/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b6e93df033134b9d4a4f2f6e3756da3c/transformed/cinterop-debug/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9cb7af723e7195933f35e311fe26df8e/transformed/cinterop-debug/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/dd222736621272979b48a82306c9fc84/transformed/cinterop-debug/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a89bf12a709f188641fea9b290d9c83c/transformed/cinterop-debug/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b8db6cfc88783c1eb1f9409fd648d70d/transformed/cinterop-debug/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2990f927a149633e48c9b077821ea941/transformed/cinterop-debug/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/28243c8a43e4f9a7d07546e38e4e9c72/transformed/cinterop-debug/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/28243c8a43e4f9a7d07546e38e4e9c72/transformed/cinterop-debug/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/28243c8a43e4f9a7d07546e38e4e9c72/transformed/cinterop-debug/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm.kotlin/cinterop-android-debug/1.0.2/6c570155b34f96e747c2641b5b886cc9f6ca8df4/cinterop-android-debug-1.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm.kotlin/cinterop-android-debug/1.0.2/5a1e758aacac2777e687d264d436fcd4cccb5bc/cinterop-android-debug-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

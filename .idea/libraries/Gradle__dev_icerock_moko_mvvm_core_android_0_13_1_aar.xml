@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: dev.icerock.moko:mvvm-core-android:0.13.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/497f57f2736b11a317b9a32d8359eab1/transformed/mvvm-core-debug/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/97861b64465ed8a67e0eace6122f785c/transformed/mvvm-core-debug/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/97861b64465ed8a67e0eace6122f785c/transformed/mvvm-core-debug/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/97861b64465ed8a67e0eace6122f785c/transformed/mvvm-core-debug/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-core-android/0.13.1/19109e86a7df865c00b94aa16490676247c1b814/mvvm-core-android-0.13.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-core-android/0.13.1/f9cbc1939dabfae13e41fdd79c6f4f0162a72631/mvvm-core-android-0.13.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

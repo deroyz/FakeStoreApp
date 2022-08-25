@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.ktor:ktor-serialization-kotlinx:commonMain:2.1.0" type="kotlin.common">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/shared.Fake_Store_App/commonMain/implementation/io.ktor-ktor-serialization-kotlinx/io.ktor-ktor-serialization-kotlinx-commonMain.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-serialization-kotlinx/2.1.0/df7782b5d1648f130b67039b29f73b4918f30dc/ktor-serialization-kotlinx-2.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

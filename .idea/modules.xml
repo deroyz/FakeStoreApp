@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FakeStoreApp.buildSrc.iml" filepath="$PROJECT_DIR$/.idea/modules/FakeStoreApp.buildSrc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FakeStoreApp.buildSrc.main.iml" filepath="$PROJECT_DIR$/.idea/modules/FakeStoreApp.buildSrc.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FakeStoreApp.buildSrc.test.iml" filepath="$PROJECT_DIR$/.idea/modules/FakeStoreApp.buildSrc.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Fake_Store_App.iml" filepath="$PROJECT_DIR$/.idea/modules/Fake_Store_App.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/androidApp/Fake_Store_App.androidApp.iml" filepath="$PROJECT_DIR$/.idea/modules/androidApp/Fake_Store_App.androidApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/androidApp/Fake_Store_App.androidApp.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/androidApp/Fake_Store_App.androidApp.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/androidApp/Fake_Store_App.androidApp.main.iml" filepath="$PROJECT_DIR$/.idea/modules/androidApp/Fake_Store_App.androidApp.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/androidApp/Fake_Store_App.androidApp.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/androidApp/Fake_Store_App.androidApp.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.androidAndroidTestRelease.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.androidAndroidTestRelease.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.androidTestFixtures.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.androidTestFixtures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.androidTestFixturesDebug.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.androidTestFixturesDebug.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.androidTestFixturesRelease.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.androidTestFixturesRelease.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.commonMain.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.commonMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.commonTest.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.commonTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.iosArm64Main.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.iosArm64Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.iosArm64Test.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.iosArm64Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.iosMain.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.iosMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.iosSimulatorArm64Main.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.iosSimulatorArm64Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.iosSimulatorArm64Test.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.iosSimulatorArm64Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.iosTest.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.iosTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.iosX64Main.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.iosX64Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.iosX64Test.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.iosX64Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.main.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/Fake_Store_App.shared.unitTest.iml" />
+    </modules>
+  </component>
+</project>

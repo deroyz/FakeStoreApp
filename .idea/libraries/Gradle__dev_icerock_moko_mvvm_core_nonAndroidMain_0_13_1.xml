@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: dev.icerock.moko:mvvm-core:nonAndroidMain:0.13.1" type="kotlin.common">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/shared.Fake_Store_App/iosArm64Test/implementation/dev.icerock.moko-mvvm-core/dev.icerock.moko-mvvm-core-nonAndroidMain.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-core/0.13.1/cf71c5321ecef9cea1c4dc04e1128f45f2a82ea/mvvm-core-0.13.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

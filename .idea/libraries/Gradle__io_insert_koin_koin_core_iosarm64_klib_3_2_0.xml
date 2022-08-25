@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.insert-koin:koin-core-iosarm64:klib:3.2.0" type="kotlin.native">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.insert-koin/koin-core-iosarm64/3.2.0/c253685dec4cff8bbb07ecd256d4a8000980a4f2/koin-core.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.insert-koin/koin-core-iosarm64/3.2.0/6f6ae05a6be13ee5700c0bff1e7a83de654321d3/koin-core-iosarm64-3.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

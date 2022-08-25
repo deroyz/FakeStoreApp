@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.realm.kotlin:cinterop:1.0.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm.kotlin/cinterop/1.0.2/b234e3d511fa634f34fd9ecf86b8cb2658bd6c49/cinterop-metadata-1.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm.kotlin/cinterop/1.0.2/19f68d5bf8c101f10b6f505f5ca00cfb64cd08db/cinterop-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

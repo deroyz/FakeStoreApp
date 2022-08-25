@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.squareup.sqldelight:native-driver:nativeDarwinMain:1.5.3" type="kotlin.native">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/shared.Fake_Store_App/iosMain/implementation/com.squareup.sqldelight-native-driver/com.squareup.sqldelight-native-driver-nativeDarwinMain.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.sqldelight/native-driver/1.5.3/a9d09b56654bd9a55f64d7e2de7d74f6af0f7b6a/native-driver-1.5.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.squareup.sqldelight:runtime:nativeMain:1.5.3" type="kotlin.native">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/shared.Fake_Store_App/iosMain/implementation/com.squareup.sqldelight-runtime/com.squareup.sqldelight-runtime-nativeMain.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.sqldelight/runtime/1.5.3/47692d9147c9f457d09bf41b336f5c7d614f42df/runtime-1.5.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

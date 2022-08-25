@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":shared:iosArm64Test" external.linked.project.path="$MODULE_DIR$/../../../shared" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="Fake_Store_App" external.system.module.type="sourceSet" external.system.module.version="1.0" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="5" platform="Native (ios_arm64) " allPlatforms="Native []/Native [ios_arm64]" useProjectSettings="false" isTestModule="true" externalProjectId=":shared" isHmppProject="true">
+        <dependsOnModuleNames>
+          <dependsOn>:shared:commonTest</dependsOn>
+          <dependsOn>:shared:iosTest</dependsOn>
+        </dependsOnModuleNames>
+        <sourceSets>
+          <sourceSet>Fake_Store_App.shared.commonTest</sourceSet>
+          <sourceSet>Fake_Store_App.shared.iosTest</sourceSet>
+          <sourceSet>Fake_Store_App.shared.commonMain</sourceSet>
+          <sourceSet>Fake_Store_App.shared.iosMain</sourceSet>
+        </sourceSets>
+        <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
+        <compilerSettings />
+        <compilerArguments>
+          <flagArguments>
+            <flagArg name="multiPlatform" arg="true" />
+          </flagArguments>
+          <stringArguments>
+            <stringArg name="apiVersion" arg="1.7" />
+            <stringArg name="languageVersion" arg="1.7" />
+          </stringArguments>
+          <arrayArguments>
+            <arrayArg name="pluginClasspaths">
+              <args>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm.kotlin/plugin-compiler/1.0.2/2b02c73951d91dc5a3618ec9282bdb7b8a5897ae/plugin-compiler-1.0.2.jar</arg>
+                <arg>$KOTLIN_BUNDLED$/lib/kotlinx-serialization-compiler-plugin.jar</arg>
+              </args>
+            </arrayArg>
+            <arrayArg name="pluginOptions" />
+          </arrayArguments>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output-test url="file://$MODULE_DIR$/../../../shared/build/classes/kotlin/iosArm64/test/klib" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../shared/src/iosArm64Test" />
+    <orderEntry type="jdk" jdkName="Kotlin SDK" jdkType="KotlinSDK" />
+    <orderEntry type="module" module-name="Fake_Store_App.shared.iosArm64Main" scope="TEST" />
+    <orderEntry type="module" module-name="Fake_Store_App.shared.iosArm64Main" scope="TEST" />
+    <orderEntry type="module" module-name="Fake_Store_App.shared.iosArm64Main" scope="TEST" />
+    <orderEntry type="module" module-name="Fake_Store_App.shared.iosArm64Main" scope="TEST" />
+    <orderEntry type="module" module-name="Fake_Store_App.shared.iosArm64Main" scope="TEST" />
+    <orderEntry type="module" module-name="Fake_Store_App.shared.iosArm64Main" scope="TEST" />
+    <orderEntry type="module" module-name="Fake_Store_App.shared.iosArm64Main" scope="TEST" />
+    <orderEntry type="module" module-name="Fake_Store_App.shared.iosArm64Main" scope="TEST" />
+    <orderEntry type="module" module-name="Fake_Store_App.shared.iosArm64Main" scope="TEST" />
+    <orderEntry type="module" module-name="Fake_Store_App.shared.iosArm64Main" scope="TEST" />
+    <orderEntry type="module" module-name="Fake_Store_App.shared.iosArm64Main" scope="TEST" />
+    <orderEntry type="module" module-name="Fake_Store_App.shared.iosArm64Main" scope="TEST" />
+    <orderEntry type="module" module-name="Fake_Store_App.shared.iosArm64Main" scope="TEST" />
+    <orderEntry type="module" module-name="Fake_Store_App.shared.iosArm64Main" scope="TEST" />
+    <orderEntry type="module" module-name="Fake_Store_App.shared.iosArm64Main" scope="TEST" />
+    <orderEntry type="module" module-name="Fake_Store_App.shared.iosArm64Main" scope="TEST" />
+    <orderEntry type="module" module-name="Fake_Store_App.shared.iosArm64Main" scope="TEST" />
+    <orderEntry type="module" module-name="Fake_Store_App.shared.iosArm64Main" scope="TEST" />
+    <orderEntry type="module" module-name="Fake_Store_App.shared.iosArm64Main" scope="TEST" />
+    <orderEntry type="module" module-name="Fake_Store_App.shared.iosArm64Main" scope="TEST" />
+    <orderEntry type="module" module-name="Fake_Store_App.shared.iosArm64Main" scope="TEST" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.7.0 - stdlib" level="project" />
+    <orderEntry type="module" module-name="Fake_Store_App.shared.commonMain" scope="TEST" />
+    <orderEntry type="module" module-name="Fake_Store_App.shared.commonTest" scope="TEST" production-on-test="" />
+    <orderEntry type="module" module-name="Fake_Store_App.shared.iosArm64Main" scope="TEST" />
+    <orderEntry type="module" module-name="Fake_Store_App.shared.iosMain" scope="TEST" />
+    <orderEntry type="module" module-name="Fake_Store_App.shared.iosTest" scope="TEST" production-on-test="" />
+    <orderEntry type="library" scope="TEST" name="Gradle: co.touchlab:kermit-iosarm64:klib:0.3.0-m1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: co.touchlab:kermit:commonMain:0.3.0-m1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: co.touchlab:kermit:darwinMain:0.3.0-m1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: dev.icerock.moko:mvvm-core-iosarm64:klib:0.13.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: dev.icerock.moko:mvvm-core:commonMain:0.13.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: dev.icerock.moko:mvvm-core:nonAndroidMain:0.13.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-client-serialization-iosarm64:klib:2.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-client-logging-iosarm64:klib:2.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-client-content-negotiation-iosarm64:klib:2.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-client-ios-iosarm64:klib:2.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-client-core-iosarm64:klib:2.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-serialization-kotlinx-json-iosarm64:klib:2.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-serialization-core-iosarm64:klib:1.3.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.realm.kotlin:library-base-iosarm64:klib:1.0.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-iosarm64:klib:1.6.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.insert-koin:koin-core-iosarm64:klib:3.2.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.realm.kotlin:library-base:1.0.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.github.aakira:napier-iosarm64:klib:2.6.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.sqldelight:native-driver-iosarm64:klib:1.5.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: dev.icerock.moko:mvvm-internal:appleMain:0.13.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: dev.icerock.moko:mvvm-internal:commonMain:0.13.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: dev.icerock.moko:mvvm-internal:nativeMain:0.13.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: dev.icerock.moko:mvvm-internal:nonAndroidMain:0.13.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.10" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.10" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: dev.icerock.moko:mvvm-internal-iosarm64:klib:0.13.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-client-json-iosarm64:klib:2.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-serialization-json-iosarm64:klib:1.3.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:atomicfu-iosarm64:klib:0.17.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:atomicfu-iosarm64:klib:cinterop-interop:0.17.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-serialization-iosarm64:klib:2.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-client-darwin-iosarm64:klib:2.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-events-iosarm64:klib:2.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-websocket-serialization-iosarm64:klib:2.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-http-iosarm64:klib:2.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.realm.kotlin:cinterop:1.0.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-serialization-kotlinx-iosarm64:klib:2.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.realm.kotlin:cinterop-iosarm64:klib:1.0.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.realm.kotlin:cinterop-iosarm64:klib:cinterop-realm_wrapper:1.0.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: co.touchlab:stately-concurrency-iosarm64:klib:1.2.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.sqldelight:runtime-iosarm64:klib:1.5.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: co.touchlab:sqliter-driver-iosarm64:klib:1.0.10" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: co.touchlab:sqliter-driver-iosarm64:klib:cinterop-sqlite3:1.0.10" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: co.touchlab:stately-common-iosarm64:klib:1.2.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-websockets-iosarm64:klib:2.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-utils-iosarm64:klib:2.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-utils-iosarm64:klib:cinterop-threadUtils:2.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: co.touchlab:stately-collections-iosarm64:klib:1.1.10" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-io-iosarm64:klib:2.1.0" level="project" />
+  </component>
+  <component name="TestModuleProperties" production-module="Fake_Store_App.shared.iosArm64Main" />
+</module>

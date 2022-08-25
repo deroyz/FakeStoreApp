@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: dev.icerock.moko:mvvm-internal:nativeMain:0.13.1" type="kotlin.native">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/shared.Fake_Store_App/iosArm64Test/implementation/dev.icerock.moko-mvvm-internal/dev.icerock.moko-mvvm-internal-nativeMain.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-internal/0.13.1/46a8145586eb63d33c562c34c45872084d44cba5/mvvm-internal-0.13.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

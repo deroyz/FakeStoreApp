@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":shared:iosArm64Main" external.linked.project.path="$MODULE_DIR$/../../../shared" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="Fake_Store_App" external.system.module.type="sourceSet" external.system.module.version="1.0" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="5" platform="Native (ios_arm64) " allPlatforms="Native []/Native [ios_arm64]" useProjectSettings="false" isTestModule="false" externalProjectId=":shared" isHmppProject="true">
+        <dependsOnModuleNames>
+          <dependsOn>:shared:commonMain</dependsOn>
+          <dependsOn>:shared:iosMain</dependsOn>
+        </dependsOnModuleNames>
+        <sourceSets>
+          <sourceSet>Fake_Store_App.shared.commonMain</sourceSet>
+          <sourceSet>Fake_Store_App.shared.iosMain</sourceSet>
+        </sourceSets>
+        <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
+        <compilerSettings />
+        <compilerArguments>
+          <flagArguments>
+            <flagArg name="multiPlatform" arg="true" />
+          </flagArguments>
+          <stringArguments>
+            <stringArg name="apiVersion" arg="1.7" />
+            <stringArg name="languageVersion" arg="1.7" />
+          </stringArguments>
+          <arrayArguments>
+            <arrayArg name="pluginClasspaths">
+              <args>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm.kotlin/plugin-compiler/1.0.2/2b02c73951d91dc5a3618ec9282bdb7b8a5897ae/plugin-compiler-1.0.2.jar</arg>
+                <arg>$KOTLIN_BUNDLED$/lib/kotlinx-serialization-compiler-plugin.jar</arg>
+              </args>
+            </arrayArg>
+            <arrayArg name="pluginOptions" />
+          </arrayArguments>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../shared/build/classes/kotlin/iosArm64/main/klib" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../shared/src/iosArm64Main">
+      <sourceFolder url="file://$MODULE_DIR$/../../../shared/src/iosArm64Main/kotlin" type="kotlin-source" />
+    </content>
+    <orderEntry type="jdk" jdkName="Kotlin SDK" jdkType="KotlinSDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.7.0 - stdlib" level="project" />
+    <orderEntry type="module" module-name="Fake_Store_App.shared.commonMain" />
+    <orderEntry type="module" module-name="Fake_Store_App.shared.iosMain" />
+    <orderEntry type="library" name="Gradle: io.ktor:ktor-client-serialization-iosarm64:klib:1.6.8" level="project" />
+    <orderEntry type="library" name="Gradle: io.ktor:ktor-client-ios-iosarm64:klib:1.6.8" level="project" />
+    <orderEntry type="library" name="Gradle: io.ktor:ktor-client-core-iosarm64:klib:1.6.8" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-serialization-core-iosarm64:klib:1.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: io.realm.kotlin:library-base-iosarm64:klib:1.0.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-iosarm64:klib:1.6.3-native-mt" level="project" />
+    <orderEntry type="library" name="Gradle: io.insert-koin:koin-core-iosarm64:klib:3.1.6" level="project" />
+    <orderEntry type="library" name="Gradle: io.realm.kotlin:library-base:1.0.2" level="project" />
+    <orderEntry type="library" name="Gradle: io.github.aakira:napier-iosarm64:klib:2.6.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.sqldelight:native-driver-iosarm64:klib:1.5.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-reflect:1.6.10" level="project" />
+    <orderEntry type="library" name="Gradle: io.ktor:ktor-client-json-iosarm64:klib:1.6.8" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-serialization-json-iosarm64:klib:1.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:atomicfu-iosarm64:klib:0.17.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:atomicfu-iosarm64:klib:cinterop-interop:0.17.3" level="project" />
+    <orderEntry type="library" name="Gradle: io.ktor:ktor-http-cio-iosarm64:klib:1.6.8" level="project" />
+    <orderEntry type="library" name="Gradle: io.realm.kotlin:cinterop:1.0.2" level="project" />
+    <orderEntry type="library" name="Gradle: io.ktor:ktor-http-iosarm64:klib:1.6.8" level="project" />
+    <orderEntry type="library" name="Gradle: io.realm.kotlin:cinterop-iosarm64:klib:1.0.2" level="project" />
+    <orderEntry type="library" name="Gradle: io.realm.kotlin:cinterop-iosarm64:klib:cinterop-realm_wrapper:1.0.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.10" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.sqldelight:runtime-iosarm64:klib:1.5.3" level="project" />
+    <orderEntry type="library" name="Gradle: co.touchlab:sqliter-driver-iosarm64:klib:1.0.10" level="project" />
+    <orderEntry type="library" name="Gradle: co.touchlab:sqliter-driver-iosarm64:klib:cinterop-sqlite3:1.0.10" level="project" />
+    <orderEntry type="library" name="Gradle: co.touchlab:stately-common-iosarm64:klib:1.1.10" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+    <orderEntry type="library" name="Gradle: io.ktor:ktor-utils-iosarm64:klib:1.6.8" level="project" />
+    <orderEntry type="library" name="Gradle: io.ktor:ktor-utils-iosarm64:klib:cinterop-utils:1.6.8" level="project" />
+    <orderEntry type="library" name="Gradle: co.touchlab:stately-collections-iosarm64:klib:1.1.10" level="project" />
+    <orderEntry type="library" name="Gradle: io.ktor:ktor-io-iosarm64:klib:1.6.8" level="project" />
+    <orderEntry type="library" name="Gradle: io.ktor:ktor-io-iosarm64:klib:cinterop-bits:1.6.8" level="project" />
+    <orderEntry type="library" name="Gradle: io.ktor:ktor-io-iosarm64:klib:cinterop-sockets:1.6.8" level="project" />
+    <orderEntry type="library" name="Gradle: co.touchlab:stately-concurrency-iosarm64:klib:1.1.10" level="project" />
+  </component>
+</module>

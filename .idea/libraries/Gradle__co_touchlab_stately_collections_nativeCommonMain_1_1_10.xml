@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: co.touchlab:stately-collections:nativeCommonMain:1.1.10" type="kotlin.native">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/shared.Fake_Store_App/iosMain/implementation/co.touchlab-stately-collections/co.touchlab-stately-collections-nativeCommonMain.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/co.touchlab/stately-collections/1.1.10/2caa476c2cbf739fa79aecd8a9da0635f782b2ca/stately-collections-1.1.10-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

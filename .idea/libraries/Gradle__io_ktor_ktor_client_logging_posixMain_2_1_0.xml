@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.ktor:ktor-client-logging:posixMain:2.1.0" type="kotlin.native">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/shared.Fake_Store_App/commonTest/implementation/io.ktor-ktor-client-logging/io.ktor-ktor-client-logging-posixMain.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-client-logging/2.1.0/cbe07706b9522e6cc6c8f2e38db60225840e2c4b/ktor-client-logging-2.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

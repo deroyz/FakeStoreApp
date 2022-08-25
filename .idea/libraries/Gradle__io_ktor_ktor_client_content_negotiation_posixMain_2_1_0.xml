@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.ktor:ktor-client-content-negotiation:posixMain:2.1.0" type="kotlin.native">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/shared.Fake_Store_App/commonTest/implementation/io.ktor-ktor-client-content-negotiation/io.ktor-ktor-client-content-negotiation-posixMain.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-client-content-negotiation/2.1.0/d1a0fcd75fe709608d84adca2fc21c74789dc131/ktor-client-content-negotiation-2.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

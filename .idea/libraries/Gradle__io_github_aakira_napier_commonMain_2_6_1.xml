@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.github.aakira:napier:commonMain:2.6.1" type="kotlin.common">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/shared.Fake_Store_App/commonMain/implementation/io.github.aakira-napier/io.github.aakira-napier-commonMain.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.aakira/napier/2.6.1/305e01a7ef930b1c024fbe9edb98cbeaa3df2ab3/napier-2.6.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
