@@ -8,8 +8,9 @@ import kim.young.fakestoreapp.shared.data.remote.AbstractApiService
 import kim.young.fakestoreapp.shared.data.remote.ApiServiceImpl
 import kim.young.fakestoreapp.shared.data.repository.AbstractRepository
 import kim.young.fakestoreapp.shared.data.repository.RepositoryImpl
-import kim.young.fakestoreapp.shared.domain.usecase.CacheProductListFromApiUseCase
-import kim.young.fakestoreapp.shared.domain.usecase.GetAllProductsFromRealmUseCase
+import kim.young.fakestoreapp.shared.domain.usecase.GetProductListUseCase
+import kim.young.fakestoreapp.shared.domain.usecase.GetProductByIdUseCase
+import kim.young.fakestoreapp.shared.util.ResponseHandler
 import kim.young.fakestoreapp.shared.platformModule
 import io.ktor.client.*
 import io.ktor.client.engine.*
@@ -18,7 +19,6 @@ import io.ktor.client.plugins.logging.*
 import io.ktor.serialization.kotlinx.json.*
 import io.realm.kotlin.Realm
 import io.realm.kotlin.RealmConfiguration
-import kim.young.fakestoreapp.shared.util.ResponseHandler
 import kotlinx.serialization.json.Json
 import org.koin.core.context.startKoin
 import org.koin.dsl.KoinAppDeclaration
@@ -66,7 +66,7 @@ fun getRepositoryModule(enableNetworkLogs: Boolean, baseUrl: String) = module {
         ApiServiceImpl(get(), baseUrl)
     }
     single<AbstractRepository> {
-        RepositoryImpl(get(), get())
+        RepositoryImpl(get(), get(), get())
     }
 }
 
@@ -78,8 +78,8 @@ fun createRealmDatabase(): Realm {
 }
 
 fun getUseCaseModule() = module {
-    single { GetAllProductsFromRealmUseCase(get()) }
-    single { CacheProductListFromApiUseCase(get()) }
+    single { GetProductListUseCase(get()) }
+    single { GetProductByIdUseCase(get()) }
 }
 
 fun createHttpClient(

@@ -7,7 +7,8 @@ buildscript {
     dependencies {
         classpath(Libraries.kotlin)
         classpath(Libraries.gradle)
-        classpath("io.insert-koin:koin-gradle-plugin:${Versions.koin}")
+        classpath(Libraries.realmPlugin)
+
     }
 }
 

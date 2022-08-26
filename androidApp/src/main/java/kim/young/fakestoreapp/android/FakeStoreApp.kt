@@ -2,7 +2,6 @@ package kim.young.fakestoreapp.android
 
 import android.app.Application
 import kim.young.fakestoreapp.shared.di.initKoin
-import org.koin.android.BuildConfig
 import org.koin.android.ext.koin.androidContext
 import org.koin.dsl.module
 

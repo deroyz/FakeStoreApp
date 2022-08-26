@@ -9,8 +9,11 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b8db6cfc88783c1eb1f9409fd648d70d/transformed/cinterop-debug/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2990f927a149633e48c9b077821ea941/transformed/cinterop-debug/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/28243c8a43e4f9a7d07546e38e4e9c72/transformed/cinterop-debug/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/28243c8a43e4f9a7d07546e38e4e9c72/transformed/cinterop-debug/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/28243c8a43e4f9a7d07546e38e4e9c72/transformed/cinterop-debug/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5525717315f412054ce8f055ca0f7805/transformed/cinterop-debug/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b68b0fa0168d7f8a8ec24b666bd38a42/transformed/cinterop-debug/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/02f130f0f11dd935f6961ef49b9768ad/transformed/cinterop-debug/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/02f130f0f11dd935f6961ef49b9768ad/transformed/cinterop-debug/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/02f130f0f11dd935f6961ef49b9768ad/transformed/cinterop-debug/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm.kotlin/cinterop-android-debug/1.0.2/6c570155b34f96e747c2641b5b886cc9f6ca8df4/cinterop-android-debug-1.0.2-javadoc.jar!/" />

@@ -1,9 +1,9 @@
 plugins {
     kotlin("multiplatform")
     kotlin("native.cocoapods")
-    kotlin("plugin.serialization") version Versions.kotlin
     id("com.android.library")
-    id("io.realm.kotlin")  version Versions.realm
+    kotlin("plugin.serialization") version Versions.kotlin
+    id("io.realm.kotlin")
     id("kotlin-parcelize")
 }
 
@@ -41,13 +41,15 @@ kotlin {
             dependencies {
 
                 implementation(Libraries.ktorCore)
-                implementation(Libraries.ktorSerialization)
-                implementation(Libraries.ktorClientLogging)
-                implementation(Libraries.ktorContentNegotiation)
                 implementation(Libraries.ktorJson)
+                implementation(Libraries.ktorClientJson)
+                implementation(Libraries.ktorClientLogging)
+                implementation(Libraries.ktorSerialization)
+                implementation(Libraries.ktorContentNegotiation)
 
                 implementation(Libraries.Common.kotlinxSerializationCore)
                 implementation(Libraries.Common.kotlinxCoroutinesCore)
+
                 implementation(Libraries.koinCore)
 
                 implementation(Libraries.realm)
@@ -71,6 +73,7 @@ kotlin {
                 implementation(Libraries.coroutinesAndroid)
             }
         }
+
         val androidTest by getting {
             dependencies {
                 implementation(kotlin("test-junit"))

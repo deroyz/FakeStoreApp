@@ -6,15 +6,11 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import coil.annotation.ExperimentalCoilApi
 import kim.young.fakestoreapp.android.presentation.products.ProductsScreen
-import kim.young.fakestoreapp.shared.presentation.products.ProductsViewModel
 
 
 @ExperimentalCoilApi
 @Composable
-fun Navigation(
-    vmProducts: ProductsViewModel,
-//    vmDetail: DetailViewModel
-) {
+fun Navigation(){
 
     val navController = rememberNavController()
 
@@ -23,7 +19,7 @@ fun Navigation(
         startDestination = DestinationScreen.Products.route
     ) {
         composable(DestinationScreen.Products.route) {
-            ProductsScreen(navController = navController, vm = vmProducts)
+            ProductsScreen(navController = navController)
         }
 
 //        composable(DestinationScreen.Detail.route) {

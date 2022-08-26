@@ -118,6 +118,18 @@
         </SOURCES>
       </library>
     </orderEntry>
+    <orderEntry type="library" name="Gradle: io.ktor:ktor-client-json:commonMain:2.1.0" level="project" />
+    <orderEntry type="module-library">
+      <library name="Gradle: io.ktor:ktor-client-json:posixMain:2.1.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Fake_Store_App/iosMain/implementation/io.ktor-ktor-client-json/io.ktor-ktor-client-json-posixMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-client-json/2.1.0/706b3b7307dcadf6a7bf747558abdf280403c212/ktor-client-json-2.1.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
     <orderEntry type="library" name="Gradle: io.ktor:ktor-client-logging:commonMain:2.1.0" level="project" />
     <orderEntry type="module-library">
       <library name="Gradle: io.ktor:ktor-client-logging:posixMain:2.1.0">
@@ -127,18 +139,6 @@
         <JAVADOC />
         <SOURCES>
           <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-client-logging/2.1.0/cbe07706b9522e6cc6c8f2e38db60225840e2c4b/ktor-client-logging-2.1.0-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="library" name="Gradle: io.ktor:ktor-client-content-negotiation:commonMain:2.1.0" level="project" />
-    <orderEntry type="module-library">
-      <library name="Gradle: io.ktor:ktor-client-content-negotiation:posixMain:2.1.0">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Fake_Store_App/iosMain/implementation/io.ktor-ktor-client-content-negotiation/io.ktor-ktor-client-content-negotiation-posixMain.klib!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-client-content-negotiation/2.1.0/d1a0fcd75fe709608d84adca2fc21c74789dc131/ktor-client-content-negotiation-2.1.0-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -166,8 +166,18 @@
         </SOURCES>
       </library>
     </orderEntry>
-    <orderEntry type="library" name="Gradle: io.ktor:ktor-client-core:commonMain:2.1.0" level="project" />
-    <orderEntry type="library" name="Gradle: io.ktor:ktor-client-ios:darwinMain:2.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: io.ktor:ktor-client-content-negotiation:commonMain:2.1.0" level="project" />
+    <orderEntry type="module-library">
+      <library name="Gradle: io.ktor:ktor-client-content-negotiation:posixMain:2.1.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Fake_Store_App/iosMain/implementation/io.ktor-ktor-client-content-negotiation/io.ktor-ktor-client-content-negotiation-posixMain.klib!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-client-content-negotiation/2.1.0/d1a0fcd75fe709608d84adca2fc21c74789dc131/ktor-client-content-negotiation-2.1.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.0" level="project" />
     <orderEntry type="module-library">
       <library name="Gradle: dev.icerock.moko:mvvm-internal:appleMain:0.13.1">
@@ -213,6 +223,8 @@
         </SOURCES>
       </library>
     </orderEntry>
+    <orderEntry type="library" name="Gradle: io.ktor:ktor-client-core:commonMain:2.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: io.ktor:ktor-client-ios:darwinMain:2.1.0" level="project" />
     <orderEntry type="module-library">
       <library name="Gradle: io.ktor:ktor-client-core:posixMain:2.1.0">
         <CLASSES>
@@ -226,7 +238,6 @@
     </orderEntry>
     <orderEntry type="library" name="Gradle: io.ktor:ktor-serialization-kotlinx-json:commonMain:2.1.0" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.10" level="project" />
-    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-serialization-core:commonMain:1.3.3" level="project" />
     <orderEntry type="module-library">
       <library name="Gradle: org.jetbrains.kotlinx:atomicfu:commonMain:0.17.3">
         <CLASSES>
@@ -260,6 +271,7 @@
         </SOURCES>
       </library>
     </orderEntry>
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-serialization-core:commonMain:1.3.3" level="project" />
     <orderEntry type="module-library">
       <library name="Gradle: org.jetbrains.kotlinx:kotlinx-serialization-core:nativeMain:1.3.3">
         <CLASSES>
@@ -271,8 +283,8 @@
         </SOURCES>
       </library>
     </orderEntry>
-    <orderEntry type="library" name="Gradle: io.insert-koin:koin-core:commonMain:3.2.0" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+    <orderEntry type="library" name="Gradle: io.insert-koin:koin-core:commonMain:3.2.0" level="project" />
     <orderEntry type="library" name="Gradle: io.github.aakira:napier:commonMain:2.6.1" level="project" />
     <orderEntry type="module-library">
       <library name="Gradle: io.insert-koin:koin-core:darwinMain:3.2.0">
@@ -310,19 +322,7 @@
     <orderEntry type="library" name="Gradle: com.squareup.sqldelight:native-driver:nativeDarwinMain:1.5.3" level="project" />
     <orderEntry type="library" name="Gradle: com.squareup.sqldelight:native-driver:nativeMain:1.5.3" level="project" />
     <orderEntry type="library" name="Gradle: io.realm.kotlin:library-base:1.0.2" level="project" />
-    <orderEntry type="library" name="Gradle: io.ktor:ktor-client-json:commonMain:2.1.0" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-serialization-json:commonMain:1.3.3" level="project" />
-    <orderEntry type="module-library">
-      <library name="Gradle: io.ktor:ktor-client-json:posixMain:2.1.0">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../.gradle/kotlin/sourceSetMetadata/shared.Fake_Store_App/iosMain/implementation/io.ktor-ktor-client-json/io.ktor-ktor-client-json-posixMain.klib!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-client-json/2.1.0/706b3b7307dcadf6a7bf747558abdf280403c212/ktor-client-json-2.1.0-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
     <orderEntry type="library" name="Gradle: io.ktor:ktor-serialization:commonMain:2.1.0" level="project" />
     <orderEntry type="library" name="Gradle: io.ktor:ktor-events:commonMain:2.1.0" level="project" />
     <orderEntry type="module-library">

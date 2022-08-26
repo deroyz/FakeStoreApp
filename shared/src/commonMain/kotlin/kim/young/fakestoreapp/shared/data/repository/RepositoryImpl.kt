@@ -1,45 +1,98 @@
 package kim.young.fakestoreapp.shared.data.repository
 
-import io.realm.kotlin.internal.platform.isFrozen
 import kim.young.fakestoreapp.shared.data.local.AbstractRealmService
+import kim.young.fakestoreapp.shared.data.local.ProductDatabaseModel
 import kim.young.fakestoreapp.shared.data.local.asDomainModel
 import kim.young.fakestoreapp.shared.data.remote.AbstractApiService
+import kim.young.fakestoreapp.shared.data.remote.ProductNetworkModel
 import kim.young.fakestoreapp.shared.data.remote.asDatabaseModel
-import kim.young.fakestoreapp.shared.data.remote.map
+import kim.young.fakestoreapp.shared.data.remote.asDomainModel
 import kim.young.fakestoreapp.shared.domain.ProductDomainModel
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.coroutineScope
+import kim.young.fakestoreapp.shared.util.DataState
+import kim.young.fakestoreapp.shared.util.ResponseHandler
 import kotlinx.coroutines.flow.*
-import kotlinx.coroutines.launch
 
 abstract class AbstractRepository {
-    abstract suspend fun cacheProductListFromApi()
-    abstract fun getAllProductsFromRealm(): Flow<List<ProductDomainModel>>
+    abstract fun getProductList(): Flow<DataState<List<ProductDomainModel>>>
+    abstract fun getProductById(id: Int): Flow<DataState<out Any>>
 }
 
 class RepositoryImpl(
-    private val ApiService: AbstractApiService,
-    private val RealmService: AbstractRealmService
+    private val apiService: AbstractApiService,
+    private val realmService: AbstractRealmService,
+    private val responseHandler: ResponseHandler
 ) : AbstractRepository() {
 
-    override suspend fun cacheProductListFromApi() {
-
-        CoroutineScope(Dispatchers.Default).launch {
-
-            ApiService.getProductsFromApi().data!!.asIterable().asFlow().onCompletion {
-                RealmService.insertProductList()
+    suspend fun getProductListFromApi(
+        onError: suspend (message: DataState.CustomMessages) -> Unit,
+        data: suspend (data: List<ProductDomainModel>) -> Unit
+    ) {
+        flow { emit(apiService.getProductListFromApi()) }.collect() { dataState ->
+            when (dataState) {
+                is DataState.Success -> {
+                    realmService.insertProductList(
+                        dataState.data?.asDatabaseModel() ?: emptyList()
+                    )
+                    data(dataState.data?.asDomainModel() ?: emptyList())
+                }
+                is DataState.Error -> {
+                    onError(
+                        dataState.error
+                    )
+                }
+                else -> {
+                    onError(
+                        dataState.error
+                    )
+                }
             }
         }
     }
 
-    override fun getAllProductsFromRealm(): Flow<List<ProductDomainModel>> {
-        return channelFlow<List<ProductDomainModel>> {
-            RealmService.getAllProducts().collect() { resultsChange ->
-                resultsChange.list.asDomainModel()
+    override fun getProductList() =
+
+        channelFlow<DataState<List<ProductDomainModel>>> {
+
+            realmService.getProductList().collect() { resultsChange ->
+                if (resultsChange.list.isEmpty()) {
+                    println("======> List is Empty")
+                    getProductListFromApi(
+                        { message ->
+                            send(responseHandler.handleException(message.message))
+                        },
+                        { data ->
+                            println(data.toString())
+                            send(responseHandler.handleSuccess(data))
+                        }
+                    )
+                } else {
+                    println("======> List is full")
+                    send(responseHandler.handleSuccess(resultsChange.list.asDomainModel()))
+                }
+            }
+        }
+
+    override fun getProductById(id: Int): Flow<DataState<out Any>> {
+
+        return channelFlow {
+            realmService.getProductById(id).collect() { result ->
+                if (result.list.isNullOrEmpty()) {
+                    getProductListFromApi(
+                        { message ->
+                            send(responseHandler.handleException(message.message))
+                        },
+                        { data ->
+                            println(data.toString())
+                            send(responseHandler.handleSuccess(data))
+                        }
+                    )
+                } else {
+                    send(responseHandler.handleSuccess(result.list.asDomainModel()))
+                }
             }
         }
     }
+
 
 }
 

@@ -1,23 +1,21 @@
 package kim.young.fakestoreapp.shared.presentation.products
 
-import kim.young.fakestoreapp.shared.domain.usecase.CacheProductListFromApiUseCase
-import kim.young.fakestoreapp.shared.domain.usecase.GetAllProductsFromRealmUseCase
+import kim.young.fakestoreapp.shared.domain.usecase.GetProductListUseCase
+import kim.young.fakestoreapp.shared.domain.usecase.GetProductByIdUseCase
 import dev.icerock.moko.mvvm.viewmodel.ViewModel
-import io.github.aakira.napier.Napier
+import kim.young.fakestoreapp.shared.util.DataState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 
 class ProductsViewModel(
-    private val getAllProductsFromRealmUseCase: GetAllProductsFromRealmUseCase,
-    private val cacheProductListFromApiUseCase: CacheProductListFromApiUseCase
+    private val getProductListUseCase: GetProductListUseCase,
+    private val getProductByIdUseCase: GetProductByIdUseCase
 ) : ViewModel() {
 
     var state = MutableStateFlow(ProductsScreenState())
 
-    init{
-        Napier.e { "ViewModel!"}
-        cacheProductList()
+    init {
         getAllProducts()
     }
 
@@ -27,25 +25,59 @@ class ProductsViewModel(
             is ProductsScreenSideEffects.GetAllProducts -> {
                 getAllProducts()
             }
-            is ProductsScreenSideEffects.CacheProductList -> {
-                cacheProductList()
-            }
         }
     }
+
+
 
     private fun getAllProducts() {
+        viewModelScope.launch {
 
-        viewModelScope.launch{
-            getAllProductsFromRealmUseCase.invoke().collectLatest(){
+
+            getProductListUseCase.invoke().collectLatest { dataState ->
+
+                when (dataState) {
+                    is DataState.Success -> {
+
+                        state.emit(
+                            state.value.copy(
+                                isLoading = false,
+                                isSuccess = true,
+                                products = dataState.data ?: emptyList()
+                            )
+                        )
+
+                    }
+                    is DataState.Error -> {
+
+                        state.emit(
+                            state.value.copy(
+                                isLoading = false,
+                                isSuccess = false,
+                                error = Error(true, dataState.error.message),
+                            )
+                        )
+
+
+                    }
+                    else -> {
+
+                        state.emit(
+                            state.value.copy(
+                                isLoading = false,
+                                isSuccess = false,
+                                error = Error(true, dataState.error.message),
+                            )
+                        )
+
+                    }
+                }
 
             }
+
         }
     }
-
-    private fun cacheProductList() {
-        viewModelScope.launch {
-            cacheProductListFromApiUseCase.invoke()
-        }
-    }
-
 }
+
+
+

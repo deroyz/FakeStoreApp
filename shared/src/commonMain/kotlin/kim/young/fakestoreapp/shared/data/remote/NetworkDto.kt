@@ -1,6 +1,7 @@
 package kim.young.fakestoreapp.shared.data.remote
 
 import kim.young.fakestoreapp.shared.data.local.ProductDatabaseModel
+import kim.young.fakestoreapp.shared.domain.ProductDomainModel
 import kotlinx.serialization.Serializable
 
 @Serializable
@@ -25,22 +26,42 @@ data class Rating(
     val count: Int
 )
 
-fun ProductNetworkModel.map(): ProductDatabaseModel{
-    return ProductDatabaseModel().apply{
-        id = this@map.id
-        title = this@map.title
-        price = this@map.price
-        description = this@map.description
-        category = this@map.category
-        image = this@map.image
-        rate = this@map.rating.rate
-        count = this@map.rating.count
+fun ProductNetworkModel.asDomainModel(): ProductDomainModel {
+    return ProductDomainModel(
+        id = id,
+        title = title,
+        price = price,
+        description = description,
+        category = category,
+        image = image,
+        rate = rating.rate,
+        count = rating.count
+    )
+
+}
+
+fun List<ProductNetworkModel>.asDomainModel(): List<ProductDomainModel> {
+    return map {
+        it.asDomainModel()
+    }
+}
+
+fun ProductNetworkModel.asDatabaseModel(): ProductDatabaseModel {
+    return ProductDatabaseModel().apply {
+        id = this@asDatabaseModel.id
+        title = this@asDatabaseModel.title
+        price = this@asDatabaseModel.price
+        description = this@asDatabaseModel.description
+        category = this@asDatabaseModel.category
+        image = this@asDatabaseModel.image
+        rate = this@asDatabaseModel.rating.rate
+        count = this@asDatabaseModel.rating.count
     }
 }
 
 
 fun List<ProductNetworkModel>.asDatabaseModel(): List<ProductDatabaseModel> {
     return map {
-        it.map()
+        it.asDatabaseModel()
     }
 }

@@ -9,7 +9,7 @@ import io.ktor.http.*
 import kim.young.fakestoreapp.shared.util.DataState
 
 abstract class AbstractApiService {
-    abstract suspend fun getProductsFromApi(): DataState<List<ProductNetworkModel>>
+    abstract suspend fun getProductListFromApi(): DataState<List<ProductNetworkModel>>
 }
 
 class ApiServiceImpl(
@@ -17,7 +17,7 @@ class ApiServiceImpl(
     private val baseUrl: String
 ) : AbstractApiService() {
 
-    override suspend fun getProductsFromApi(): DataState<List<ProductNetworkModel>> {
+    override suspend fun getProductListFromApi(): DataState<List<ProductNetworkModel>> {
         return try {
             DataState.Success(httpClient.get(baseUrl).body())
         } catch (e: RedirectResponseException) {

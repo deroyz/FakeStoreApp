@@ -2,6 +2,7 @@ package kim.young.fakestoreapp.shared.domain
 
 import kim.young.fakestoreapp.shared.CommonParcelable
 import kim.young.fakestoreapp.shared.CommonParcelize
+import kim.young.fakestoreapp.shared.data.local.ProductDatabaseModel
 
 
 @CommonParcelize
@@ -13,7 +14,7 @@ data class ProductDomainModel(
     val category: String? = "",
     val image: String? = "",
     val rate: Double? = 0.0,
-    var count: Int? = 0,
+    val count: Int? = 0,
 
 ) : CommonParcelable {
     constructor(): this(

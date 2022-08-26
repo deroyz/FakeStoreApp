@@ -1,5 +1,6 @@
 package kim.young.fakestoreapp.android
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -8,20 +9,12 @@ import androidx.compose.material.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
-import coil.annotation.ExperimentalCoilApi
-
-import kim.young.fakestoreapp.android.theme.FakeStoreAppTheme
 import kim.young.fakestoreapp.android.presentation.navigation.Navigation
-import kim.young.fakestoreapp.shared.presentation.products.ProductsViewModel
-import org.koin.android.ext.android.inject
+import kim.young.fakestoreapp.android.theme.FakeStoreAppTheme
 
 class MainActivity : ComponentActivity() {
 
-    private val vmProducts: ProductsViewModel by inject()
-//    private val vmDetail: DetailViewModel by inject()
-
-
-    @OptIn(ExperimentalCoilApi::class)
+    @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -33,10 +26,8 @@ class MainActivity : ComponentActivity() {
                     }
                 }, scaffoldState = rememberScaffoldState()) {
 
-                Navigation(
-                        vmProducts = vmProducts
-//                        vmDetail = vmDetail
-                    )
+                Navigation()
+
                 }
             }
         }

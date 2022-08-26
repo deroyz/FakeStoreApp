@@ -6,9 +6,12 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e8e99777ef24aa2168af654d16a6b3e2/transformed/napier-debug/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4a53d28144de4e0d4a559bcd31139cdc/transformed/napier-debug/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d59bbe93a263c546c0839270d9288be0/transformed/napier-debug/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/732d98015f1c6d531c13f9ecf424c97b/transformed/napier-debug/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/732d98015f1c6d531c13f9ecf424c97b/transformed/napier-debug/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/732d98015f1c6d531c13f9ecf424c97b/transformed/napier-debug/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/781a3876fcd8a700418fb15dafca9cb7/transformed/napier-debug/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/bf5784afa88e4ef81ef06d51b8d6c0df/transformed/napier-debug/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/a6be68e1de7c058891a6f8b5e8188884/transformed/napier-debug/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a6be68e1de7c058891a6f8b5e8188884/transformed/napier-debug/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a6be68e1de7c058891a6f8b5e8188884/transformed/napier-debug/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.aakira/napier-android-debug/2.6.1/ac2c8213457d61399681303bedd8449944a828d/napier-android-debug-2.6.1-javadoc.jar!/" />

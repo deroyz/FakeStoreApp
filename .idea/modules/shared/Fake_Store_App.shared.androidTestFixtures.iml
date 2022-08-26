@@ -73,18 +73,18 @@
         </SOURCES>
       </library>
     </orderEntry>
+    <orderEntry type="library" name="Gradle: io.ktor:ktor-client-json:commonMain:2.1.0" level="project" />
     <orderEntry type="library" name="Gradle: io.ktor:ktor-client-logging:commonMain:2.1.0" level="project" />
-    <orderEntry type="library" name="Gradle: io.ktor:ktor-client-content-negotiation:commonMain:2.1.0" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:commonMain:1.6.4" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:concurrentMain:1.6.4" level="project" />
-    <orderEntry type="library" name="Gradle: io.ktor:ktor-client-core:commonMain:2.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: io.ktor:ktor-client-content-negotiation:commonMain:2.1.0" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.7.0" level="project" />
+    <orderEntry type="library" name="Gradle: io.ktor:ktor-client-core:commonMain:2.1.0" level="project" />
     <orderEntry type="library" name="Gradle: io.ktor:ktor-serialization-kotlinx-json:commonMain:2.1.0" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-serialization-core:commonMain:1.3.3" level="project" />
     <orderEntry type="library" name="Gradle: io.insert-koin:koin-core:commonMain:3.2.0" level="project" />
     <orderEntry type="library" name="Gradle: io.github.aakira:napier:commonMain:2.6.1" level="project" />
     <orderEntry type="library" name="Gradle: io.realm.kotlin:library-base:1.0.2" level="project" />
-    <orderEntry type="library" name="Gradle: io.ktor:ktor-client-json:commonMain:2.1.0" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-serialization-json:commonMain:1.3.3" level="project" />
     <orderEntry type="library" name="Gradle: io.ktor:ktor-serialization:commonMain:2.1.0" level="project" />
     <orderEntry type="library" name="Gradle: io.ktor:ktor-events:commonMain:2.1.0" level="project" />
