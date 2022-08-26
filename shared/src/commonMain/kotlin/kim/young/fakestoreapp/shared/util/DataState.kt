@@ -5,6 +5,7 @@ package kim.young.fakestoreapp.shared.util
  * A generic class that holds a value with its loading status.
  * @param <T>
 </T> */
+
 sealed class DataState<T>(
     val data: T? = null,
     val error: CustomMessages = CustomMessages.ExceptionMessage("Something Went Wrong")
