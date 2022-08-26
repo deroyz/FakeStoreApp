@@ -14,8 +14,12 @@ import kim.young.fakestoreapp.shared.util.ResponseHandler
 import kim.young.fakestoreapp.shared.platformModule
 import io.ktor.client.*
 import io.ktor.client.engine.*
+import io.ktor.client.plugins.*
 import io.ktor.client.plugins.contentnegotiation.*
 import io.ktor.client.plugins.logging.*
+import io.ktor.client.request.*
+import io.ktor.client.statement.*
+import io.ktor.http.*
 import io.ktor.serialization.kotlinx.json.*
 import io.realm.kotlin.Realm
 import io.realm.kotlin.RealmConfiguration
@@ -32,18 +36,19 @@ fun initKoin(
 ) =
     startKoin {
         appDeclaration()
-        modules(commonModule(enableNetworkLogs = enableNetworkLogs, baseUrl))
+        modules(
+            getRepositoryModule(enableNetworkLogs = enableNetworkLogs, baseUrl),
+            platformModule(),
+            helperModule,
+            useCaseModule,
+        )
     }
 
 
 // called by iOS etc
 fun initKoin(baseUrl: String) = initKoin(enableNetworkLogs = true, baseUrl) {}
 
-fun commonModule(enableNetworkLogs: Boolean, baseUrl: String) =
-    getUseCaseModule() + getRepositoryModule(enableNetworkLogs, baseUrl) + platformModule()
-
 fun getRepositoryModule(enableNetworkLogs: Boolean, baseUrl: String) = module {
-
     // Http Client
     single {
         createHttpClient(
@@ -71,15 +76,25 @@ fun getRepositoryModule(enableNetworkLogs: Boolean, baseUrl: String) = module {
 }
 
 
+val useCaseModule = module {
+    single { GetProductListUseCase(get()) }
+    single { GetProductByIdUseCase(get()) }
+}
+
+val helperModule = module {
+    single { ResponseHandler() }
+}
+
 fun createRealmDatabase(): Realm {
     val configuration =
         RealmConfiguration.Builder(schema = setOf(ProductDatabaseModel::class)).build()
     return Realm.open(configuration)
 }
 
-fun getUseCaseModule() = module {
-    single { GetProductListUseCase(get()) }
-    single { GetProductByIdUseCase(get()) }
+fun createJson() = Json {
+    isLenient = true
+    ignoreUnknownKeys = true
+    useAlternativeNames = false
 }
 
 fun createHttpClient(
@@ -88,6 +103,7 @@ fun createHttpClient(
     enableNetworkLogs: Boolean
 ) =
     HttpClient(httpClientEngine) {
+
 
         install(ContentNegotiation) {
             json(json)
@@ -99,12 +115,3 @@ fun createHttpClient(
             }
         }
     }
-
-fun createJson() = Json { isLenient = true; ignoreUnknownKeys = true }
-
-fun getHelperModule() = module {
-
-    single {
-        ResponseHandler()
-    }
-}
