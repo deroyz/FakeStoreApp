@@ -5,15 +5,20 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/97861b64465ed8a67e0eace6122f785c/transformed/mvvm-core-debug/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b656289b588aca8bc17acb16cfb5d23f/transformed/mvvm-core-debug/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0ec858a877cb62a1ce1b6bc7404125f4/transformed/mvvm-core-debug/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/fe88bbc35554226962f36d033336a141/transformed/mvvm-core-debug/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fe88bbc35554226962f36d033336a141/transformed/mvvm-core-debug/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fe88bbc35554226962f36d033336a141/transformed/mvvm-core-debug/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/167ca7caacf21da09f0276e8950baa1d/transformed/mvvm-core-debug/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9efb819dbc5f1081000790c45daae914/transformed/mvvm-core-debug/res" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/transforms-3/9efb819dbc5f1081000790c45daae914/transformed/mvvm-core-debug/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Program Files/caches/transforms-3/9efb819dbc5f1081000790c45daae914/transformed/mvvm-core-debug/res" />
+      <root url="file://$PROJECT_DIR$/../../Program Files/caches/transforms-3/9efb819dbc5f1081000790c45daae914/transformed/mvvm-core-debug/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-core-android/0.13.1/19109e86a7df865c00b94aa16490676247c1b814/mvvm-core-android-0.13.1-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-core-android/0.13.1/19109e86a7df865c00b94aa16490676247c1b814/mvvm-core-android-0.13.1-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-core-android/0.13.1/f9cbc1939dabfae13e41fdd79c6f4f0162a72631/mvvm-core-android-0.13.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-core-android/0.13.1/f9cbc1939dabfae13e41fdd79c6f4f0162a72631/mvvm-core-android-0.13.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

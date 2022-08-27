@@ -2,10 +2,12 @@
   <library name="Gradle: co.touchlab:stately-collections-iosarm64:klib:1.1.10" type="kotlin.native">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/co.touchlab/stately-collections-iosarm64/1.1.10/2e27b37e5e9edd6f22f71e13662b277e7daf127d/stately-collections.klib!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/co.touchlab/stately-collections-iosarm64/1.1.10/2e27b37e5e9edd6f22f71e13662b277e7daf127d/stately-collections.klib!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/co.touchlab/stately-collections-iosarm64/1.1.10/c1ac05c56c026131d0a066489aec42c72e1f1be9/stately-collections-iosarm64-1.1.10-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/co.touchlab/stately-collections-iosarm64/1.1.10/c1ac05c56c026131d0a066489aec42c72e1f1be9/stately-collections-iosarm64-1.1.10-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

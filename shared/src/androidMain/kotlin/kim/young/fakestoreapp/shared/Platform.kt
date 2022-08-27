@@ -1,9 +1,7 @@
 package kim.young.fakestoreapp.shared
 
-import android.os.Parcelable
 import io.ktor.client.engine.android.*
-import kim.young.fakestoreapp.shared.presentation.products.ProductsViewModel
-import kotlinx.parcelize.Parcelize
+import kim.young.fakestoreapp.shared.presentation.products.ProductViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
@@ -13,9 +11,9 @@ actual fun platformModule() = module {
     }
 
     viewModel{
-        ProductsViewModel(get(), get())
+        ProductViewModel(get(), get())
     }
 }
 
-actual typealias CommonParcelize = Parcelize
-actual typealias CommonParcelable = Parcelable
+actual typealias Parcelize = kotlinx.parcelize.Parcelize
+actual typealias Parcelable = android.os.Parcelable

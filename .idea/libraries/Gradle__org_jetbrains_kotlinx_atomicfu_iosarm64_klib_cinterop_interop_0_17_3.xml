@@ -2,10 +2,12 @@
   <library name="Gradle: org.jetbrains.kotlinx:atomicfu-iosarm64:klib:cinterop-interop:0.17.3" type="kotlin.native">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/atomicfu-iosarm64/0.17.3/2dadd2e3238613df736b50e8c63f78ac08f28199/atomicfu-cinterop-interop.klib!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlinx/atomicfu-iosarm64/0.17.3/2dadd2e3238613df736b50e8c63f78ac08f28199/atomicfu-cinterop-interop.klib!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/atomicfu-iosarm64/0.17.3/7b592ffe531c0601e6330eafe9bd7904effad8eb/atomicfu-iosarm64-0.17.3-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlinx/atomicfu-iosarm64/0.17.3/7b592ffe531c0601e6330eafe9bd7904effad8eb/atomicfu-iosarm64-0.17.3-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

@@ -6,6 +6,7 @@
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-websocket-serialization/2.1.0/5d3c3755d8d5b90345771ba1452fbf9f2113dd8d/ktor-websocket-serialization-2.1.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/io.ktor/ktor-websocket-serialization/2.1.0/5d3c3755d8d5b90345771ba1452fbf9f2113dd8d/ktor-websocket-serialization-2.1.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

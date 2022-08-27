@@ -2,12 +2,15 @@
   <library name="Gradle: io.ktor:ktor-serialization-kotlinx-jvm:2.1.0">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-serialization-kotlinx-jvm/2.1.0/c852a1ac0196c9b3e9085b7d19e515f3774025f6/ktor-serialization-kotlinx-jvm-2.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/io.ktor/ktor-serialization-kotlinx-jvm/2.1.0/c852a1ac0196c9b3e9085b7d19e515f3774025f6/ktor-serialization-kotlinx-jvm-2.1.0.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-serialization-kotlinx-jvm/2.1.0/d78d0e7e44ba30122202e9d5ebb43c7544855df4/ktor-serialization-kotlinx-jvm-2.1.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/io.ktor/ktor-serialization-kotlinx-jvm/2.1.0/d78d0e7e44ba30122202e9d5ebb43c7544855df4/ktor-serialization-kotlinx-jvm-2.1.0-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-serialization-kotlinx-jvm/2.1.0/57d0c0d05b5a1be79071659c20b6d821fb457de4/ktor-serialization-kotlinx-jvm-2.1.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/io.ktor/ktor-serialization-kotlinx-jvm/2.1.0/57d0c0d05b5a1be79071659c20b6d821fb457de4/ktor-serialization-kotlinx-jvm-2.1.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

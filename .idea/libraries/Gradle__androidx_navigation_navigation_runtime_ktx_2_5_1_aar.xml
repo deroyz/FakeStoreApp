@@ -1,13 +1,17 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.navigation:navigation-runtime-ktx:2.5.1@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c2a973ebcb81bee218306cd660a84d00/transformed/navigation-runtime-ktx-2.5.1/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c2a973ebcb81bee218306cd660a84d00/transformed/navigation-runtime-ktx-2.5.1/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c2a973ebcb81bee218306cd660a84d00/transformed/navigation-runtime-ktx-2.5.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/03593d44bad6dc0041cb0e64734dc772/transformed/navigation-runtime-ktx-2.5.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/03593d44bad6dc0041cb0e64734dc772/transformed/navigation-runtime-ktx-2.5.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/03593d44bad6dc0041cb0e64734dc772/transformed/navigation-runtime-ktx-2.5.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Program Files/caches/transforms-3/03593d44bad6dc0041cb0e64734dc772/transformed/navigation-runtime-ktx-2.5.1/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/transforms-3/03593d44bad6dc0041cb0e64734dc772/transformed/navigation-runtime-ktx-2.5.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Program Files/caches/transforms-3/03593d44bad6dc0041cb0e64734dc772/transformed/navigation-runtime-ktx-2.5.1/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.navigation/navigation-runtime-ktx/2.5.1/5b8f86fea035328fc9e8c660773037a3401ce25f/navigation-runtime-ktx-2.5.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/androidx.navigation/navigation-runtime-ktx/2.5.1/5b8f86fea035328fc9e8c660773037a3401ce25f/navigation-runtime-ktx-2.5.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

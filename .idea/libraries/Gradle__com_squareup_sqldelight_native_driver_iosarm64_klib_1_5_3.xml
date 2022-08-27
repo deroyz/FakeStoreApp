@@ -2,10 +2,12 @@
   <library name="Gradle: com.squareup.sqldelight:native-driver-iosarm64:klib:1.5.3" type="kotlin.native">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.sqldelight/native-driver-iosarm64/1.5.3/e745e2c5c12f31ae2aa145e65e2e804bfcb5a6c9/native-driver.klib!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/com.squareup.sqldelight/native-driver-iosarm64/1.5.3/e745e2c5c12f31ae2aa145e65e2e804bfcb5a6c9/native-driver.klib!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.sqldelight/native-driver-iosarm64/1.5.3/698349e6ef72ef570609dc55c9aed7df3771c97/native-driver-iosarm64-1.5.3-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/com.squareup.sqldelight/native-driver-iosarm64/1.5.3/698349e6ef72ef570609dc55c9aed7df3771c97/native-driver-iosarm64-1.5.3-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

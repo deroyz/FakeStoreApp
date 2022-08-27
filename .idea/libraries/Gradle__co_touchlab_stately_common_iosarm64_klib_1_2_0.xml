@@ -2,10 +2,12 @@
   <library name="Gradle: co.touchlab:stately-common-iosarm64:klib:1.2.0" type="kotlin.native">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/co.touchlab/stately-common-iosarm64/1.2.0/17c439e6c5d4beba78b7bd57643f79a7d86c1460/stately-common.klib!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/co.touchlab/stately-common-iosarm64/1.2.0/17c439e6c5d4beba78b7bd57643f79a7d86c1460/stately-common.klib!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/co.touchlab/stately-common-iosarm64/1.2.0/fcba5478c353025da9d46b07f7ba86eec443d2e0/stately-common-iosarm64-1.2.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/co.touchlab/stately-common-iosarm64/1.2.0/fcba5478c353025da9d46b07f7ba86eec443d2e0/stately-common-iosarm64-1.2.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

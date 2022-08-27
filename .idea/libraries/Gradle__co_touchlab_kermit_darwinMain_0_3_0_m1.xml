@@ -6,6 +6,7 @@
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/co.touchlab/kermit/0.3.0-m1/a57ee1425ba440479de9054ebf3f38857a9bd24a/kermit-0.3.0-m1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/co.touchlab/kermit/0.3.0-m1/a57ee1425ba440479de9054ebf3f38857a9bd24a/kermit-0.3.0-m1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

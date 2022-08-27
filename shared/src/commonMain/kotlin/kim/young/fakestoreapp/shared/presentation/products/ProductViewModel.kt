@@ -8,16 +8,12 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 
-class ProductsViewModel(
+class ProductViewModel(
     private val getProductListUseCase: GetProductListUseCase,
     private val getProductByIdUseCase: GetProductByIdUseCase
 ) : ViewModel() {
 
     var state = MutableStateFlow(ProductsScreenState())
-
-    init {
-        getAllProducts()
-    }
 
     fun onIntent(intent: ProductsScreenSideEffects) {
 
@@ -25,6 +21,7 @@ class ProductsViewModel(
             is ProductsScreenSideEffects.GetAllProducts -> {
                 getAllProducts()
             }
+            else -> {}
         }
     }
 
@@ -32,13 +29,10 @@ class ProductsViewModel(
 
     private fun getAllProducts() {
         viewModelScope.launch {
-
-
             getProductListUseCase.invoke().collectLatest { dataState ->
 
                 when (dataState) {
                     is DataState.Success -> {
-
                         state.emit(
                             state.value.copy(
                                 isLoading = false,
@@ -46,10 +40,8 @@ class ProductsViewModel(
                                 products = dataState.data ?: emptyList()
                             )
                         )
-
                     }
                     is DataState.Error -> {
-
                         state.emit(
                             state.value.copy(
                                 isLoading = false,
@@ -57,11 +49,8 @@ class ProductsViewModel(
                                 error = Error(true, dataState.error.message),
                             )
                         )
-
-
                     }
                     else -> {
-
                         state.emit(
                             state.value.copy(
                                 isLoading = false,
@@ -69,12 +58,9 @@ class ProductsViewModel(
                                 error = Error(true, dataState.error.message),
                             )
                         )
-
                     }
                 }
-
             }
-
         }
     }
 }

@@ -26,7 +26,7 @@
           <arrayArguments>
             <arrayArg name="pluginClasspaths">
               <args>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm.kotlin/plugin-compiler/1.0.2/2b02c73951d91dc5a3618ec9282bdb7b8a5897ae/plugin-compiler-1.0.2.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/io.realm.kotlin/plugin-compiler/1.0.2/2b02c73951d91dc5a3618ec9282bdb7b8a5897ae/plugin-compiler-1.0.2.jar</arg>
                 <arg>$KOTLIN_BUNDLED$/lib/kotlinx-serialization-compiler-plugin.jar</arg>
               </args>
             </arrayArg>
@@ -41,6 +41,13 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../shared/src/iosArm64Test" />
     <orderEntry type="jdk" jdkName="Kotlin SDK" jdkType="KotlinSDK" />
+    <orderEntry type="module" module-name="Fake_Store_App.shared.iosArm64Main" scope="TEST" />
+    <orderEntry type="module" module-name="Fake_Store_App.shared.iosArm64Main" scope="TEST" />
+    <orderEntry type="module" module-name="Fake_Store_App.shared.iosArm64Main" scope="TEST" />
+    <orderEntry type="module" module-name="Fake_Store_App.shared.iosArm64Main" scope="TEST" />
+    <orderEntry type="module" module-name="Fake_Store_App.shared.iosArm64Main" scope="TEST" />
+    <orderEntry type="module" module-name="Fake_Store_App.shared.iosArm64Main" scope="TEST" />
+    <orderEntry type="module" module-name="Fake_Store_App.shared.iosArm64Main" scope="TEST" />
     <orderEntry type="module" module-name="Fake_Store_App.shared.iosArm64Main" scope="TEST" />
     <orderEntry type="module" module-name="Fake_Store_App.shared.iosArm64Main" scope="TEST" />
     <orderEntry type="module" module-name="Fake_Store_App.shared.iosArm64Main" scope="TEST" />
@@ -96,7 +103,6 @@
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-iosarm64:klib:1.6.4" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: io.insert-koin:koin-core-iosarm64:klib:3.2.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: io.realm.kotlin:library-base:1.0.2" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.github.aakira:napier-iosarm64:klib:2.6.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.sqldelight:native-driver-iosarm64:klib:1.5.3" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: dev.icerock.moko:mvvm-internal:appleMain:0.13.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: dev.icerock.moko:mvvm-internal:commonMain:0.13.1" level="project" />

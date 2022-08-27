@@ -53,7 +53,6 @@ kotlin {
                 implementation(Libraries.koinCore)
 
                 implementation(Libraries.realm)
-                implementation("io.github.aakira:napier:2.6.1")
 
                 api(Libraries.kermitLogger)
                 api(Libraries.mokoMVVMCore)
@@ -67,7 +66,6 @@ kotlin {
         }
         val androidMain by getting {
             dependencies {
-//                implementation(Libraries.Android.sqlDelight)
                 implementation(Libraries.ktorAndroid)
                 implementation(Libraries.koinAndroid)
                 implementation(Libraries.coroutinesAndroid)

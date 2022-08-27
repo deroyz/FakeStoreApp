@@ -21,87 +21,86 @@
             <stringArg name="classpath">
               <args>
                 <arg>$MODULE_DIR$/../../../shared/build/intermediates/compile_library_classes_jar/debug/classes.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/2d739da72094b6dd390c6bdd39058b09/transformed/koin-androidx-compose-3.2.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/ecc8e6528347e603a663e9b1f30ebe96/transformed/lifecycle-viewmodel-compose-2.4.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/e07d7beadb8069460a7da61b97e8ca9d/transformed/ui-1.1.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/7b6ec5b2a009d14d5eb95436d6276421/transformed/runtime-saveable-1.1.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/963ac3f8c5892e9cc1c7d5931a14310c/transformed/runtime-1.1.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-client-android-jvm/2.1.0/902b220657af41861e487624df3d053895029547/ktor-client-android-jvm-2.1.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-client-serialization-jvm/2.1.0/8aad327f062db2e56ca119e18487354ed8cc8130/ktor-client-serialization-jvm-2.1.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-client-json-jvm/2.1.0/6e445f6b9dc7b4f4a82b145ad1bcf5ffbfb0ccd/ktor-client-json-jvm-2.1.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-client-logging-jvm/2.1.0/5d71d263916066a1e50324bdfb7552a5f72e7ce8/ktor-client-logging-jvm-2.1.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-client-content-negotiation-jvm/2.1.0/abf23768d4e4b8eb9b87ecbe6839979b3b214b3a/ktor-client-content-negotiation-jvm-2.1.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-client-core-jvm/2.1.0/9f817ae55e463f27d885ef051ff88e4c2acea7da/ktor-client-core-jvm-2.1.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-serialization-kotlinx-json-jvm/2.1.0/f443b9bc5f2c966026f71ab58c4afad86bf74ee5/ktor-serialization-kotlinx-json-jvm-2.1.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-events-jvm/2.1.0/ef58c3c3d012ab115011af1e2f2afc357433c220/ktor-events-jvm-2.1.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-websocket-serialization-jvm/2.1.0/d202979642d5091a18587b3f81269c0a9a8acc78/ktor-websocket-serialization-jvm-2.1.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-serialization-kotlinx-jvm/2.1.0/c852a1ac0196c9b3e9085b7d19e515f3774025f6/ktor-serialization-kotlinx-jvm-2.1.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-serialization-jvm/2.1.0/e1d36c91035d2eddd1f202411248a4b6944ea387/ktor-serialization-jvm-2.1.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-websockets-jvm/2.1.0/17015d23235fd5e784230875e630f6bd1418fdf8/ktor-websockets-jvm-2.1.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-http-jvm/2.1.0/eff494019c2c1a0e9db6e13533d241ecd6bbc822/ktor-http-jvm-2.1.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-utils-jvm/2.1.0/1b3ca53f817d054ba00c8a3e92a50ba655428c71/ktor-utils-jvm-2.1.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-io-jvm/2.1.0/ccd958db554677538c21515a0acd62862bb6b2a0/ktor-io-jvm-2.1.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-jdk8/1.6.4/5bc4b0bf6fd90fc190fd2f17e919c74c6274cb71/kotlinx-coroutines-jdk8-1.6.4.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/7f1cad0c958b3e4773874bc31e0f1751/transformed/mvvm-core-debug-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.6.4/2c997cd1c0ef33f3e751d3831929aeff1390cb30/kotlinx-coroutines-core-jvm-1.6.4.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/1d2895515f19367b685c40dd3bd3ae24/transformed/koin-android-3.2.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/7cd0938ba0de625f1fda47a1503f092e/transformed/activity-ktx-1.4.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/8139c330fa92c198c0024d7fcdda5bc5/transformed/lifecycle-viewmodel-ktx-2.3.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/85df0b545fcb9dc6172475518dcda842/transformed/lifecycle-runtime-ktx-2.3.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-android/1.6.4/f955fc8b2ad196e2f4429598440e15f7492eeb2b/kotlinx-coroutines-android-1.6.4.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.insert-koin/koin-core-jvm/3.2.0/ab77b9faefb87ddb5801b9ccfe70d7faff943192/koin-core-jvm-3.2.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/2e559637dfaa1328a97c28444c79c77f/transformed/library-base-debug-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/1d485327b5077337b0e3290e0927baa6/transformed/napier-debug-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/a34dc73fd9d2bf3720e4a7a0e85900da/transformed/cinterop-debug-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.7.10/d70d7d2c56371f7aa18f32e984e3e2e998fe9081/kotlin-stdlib-jdk8-1.7.10.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-junit/1.7.0/8d0259795071f612031901db4fcbb93cf24f25b4/kotlin-test-junit-1.7.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.13.2/8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12/junit-4.13.2.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-json-jvm/1.3.3/6298c404c1159685fb657f15fa5b78630da58c96/kotlinx-serialization-json-jvm-1.3.3.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-parcelize-runtime/1.7.0/bdd55d654d63f008fd87f08dd166727bfdb6450a/kotlin-parcelize-runtime-1.7.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test/1.7.0/970db9954386d1bb9b6666e3e49458cc8cef17b7/kotlin-test-1.7.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.7.10/1ef73fee66f45d52c67e2aca12fd945dbe0659bf/kotlin-stdlib-jdk7-1.7.10.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-core-jvm/1.3.3/3c22103b5d8e3c262db19e85d90405ca78b49efd/kotlinx-serialization-core-jvm-1.3.3.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions-runtime/1.7.0/3ff1451c5bb42b21e2efbcddad9188ac213518ca/kotlin-android-extensions-runtime-1.7.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/64ed86ded9c2d93fe3f1422eb04d33bf/transformed/appcompat-1.4.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/95595aa46b6646b046a52c37c2a03f0b/transformed/lifecycle-extensions-2.2.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/fe91aecc531cc6dfdaa95e5513c3d7b1/transformed/fragment-1.4.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/d3f654d0c913f6dd6cff5975f7fe17bf/transformed/activity-1.4.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/25521a3de3a01f0276c43eb092220fc2/transformed/core-ktx-1.2.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/5824039edc9cf231e0c22588ad043def/transformed/savedstate-ktx-1.1.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.7.10/d2abf9e77736acc4450dc4a3f707fa2c10f5099d/kotlin-stdlib-1.7.10.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.36/6c62681a2f655b49963a5983b8b0950a6120ae14/slf4j-api-1.7.36.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common-java8/2.4.1/5b8f86fea035328fc9e8c660773037a3401ce25f/lifecycle-common-java8-2.4.1.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/f4cd62fc294647d99e85870beafe3fb2/transformed/ui-text-1.1.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/0e2d957132585863cef2cce44ad8da55/transformed/ui-graphics-1.1.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/24d6e7568a4d90ba58312a2144d59429/transformed/ui-unit-1.1.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/f0dec1995775f9949448a0dc4d7eb000/transformed/ui-geometry-1.1.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/afaf5489fabf9634e0cf5a65bc4ac408/transformed/appcompat-resources-1.4.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/ed1f47d10f711fda2bf47b6f97ae8563/transformed/drawerlayout-1.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/29c202627a907ae3b55a55573c9f8ce0/transformed/viewpager-1.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/ecc9d878331f2c3a1202629c6b94ce23/transformed/loader-1.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/1b7f11626b9417ef045a00d32334cec2/transformed/vectordrawable-animated-1.1.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/34149f915d2cb21e5ef918899b0a24fd/transformed/vectordrawable-1.1.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/5ce53503f148fdbd65f8072af015f5c0/transformed/customview-1.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/239a5eae70970780b3a986566f8fb356/transformed/core-1.7.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/c2f6c23e492fe6caa0a8d2d3a68a4115/transformed/lifecycle-runtime-2.4.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/f0ef4c71693e14ad50e460b4d957befc/transformed/lifecycle-livedata-2.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/f7e605e304bfc98156f169fd2ef03531/transformed/core-runtime-2.1.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.arch.core/core-common/2.1.0/b3152fc64428c9354344bd89848ecddc09b6f07e/core-common-2.1.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/4a45bcc939c201884d663e51c8409ab8/transformed/lifecycle-viewmodel-savedstate-2.3.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/a08d9cf67f83fcff65eb5ac2d20af10a/transformed/lifecycle-livedata-core-2.3.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.4.1/1fdb7349701e9cf2f0a69fc10642b6fef6bb3e12/lifecycle-common-2.4.1.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/a7100b0c26d7f9bdddab486dec32fa6c/transformed/lifecycle-viewmodel-2.3.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/f4e113fa0734491b181ed12db5a72f2d/transformed/cursoradapter-1.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/7404c5ae27307c798d03e10af2bcf816/transformed/savedstate-1.1.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/1b95b67bdc5437727422830c5b7cca62/transformed/versionedparcelable-1.1.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.collection/collection/1.1.0/1f27220b47669781457de0d600849a5de0e89909/collection-1.1.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/76c07b7da3ae94c7d469910d368333f8/transformed/interpolator-1.0.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation/1.3.0/21f49f5f9b85fc49de712539f79123119740595/annotation-1.3.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/e25d376fb7bada8986d62e4719706d35/transformed/annotation-experimental-1.1.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/e1312196cea5ddb7b8d30a18ebb5751a/transformed/kermit-debug-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm.kotlin/jni-swig-stub/1.0.2/4470a24a0d070cf66cfd1e2a76eeb38f9470d2b9/jni-swig-stub-1.0.2.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/685e82f49caa7fc941de284a5a98035a/transformed/koin-androidx-compose-3.2.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/7432cc4fbe0479181f70bcbf13ae9786/transformed/lifecycle-viewmodel-compose-2.4.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/671a0ac4d6138079b3f2e2e23a33a387/transformed/ui-1.1.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/987e0cff121615f54570cbad4ecbae3c/transformed/runtime-saveable-1.1.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/8e8ee3778d6594ec05854965df6da32e/transformed/runtime-1.1.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/io.ktor/ktor-client-android-jvm/2.1.0/902b220657af41861e487624df3d053895029547/ktor-client-android-jvm-2.1.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/io.ktor/ktor-client-serialization-jvm/2.1.0/8aad327f062db2e56ca119e18487354ed8cc8130/ktor-client-serialization-jvm-2.1.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/io.ktor/ktor-client-json-jvm/2.1.0/6e445f6b9dc7b4f4a82b145ad1bcf5ffbfb0ccd/ktor-client-json-jvm-2.1.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/io.ktor/ktor-client-logging-jvm/2.1.0/5d71d263916066a1e50324bdfb7552a5f72e7ce8/ktor-client-logging-jvm-2.1.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/io.ktor/ktor-client-content-negotiation-jvm/2.1.0/abf23768d4e4b8eb9b87ecbe6839979b3b214b3a/ktor-client-content-negotiation-jvm-2.1.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/io.ktor/ktor-client-core-jvm/2.1.0/9f817ae55e463f27d885ef051ff88e4c2acea7da/ktor-client-core-jvm-2.1.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/io.ktor/ktor-serialization-kotlinx-json-jvm/2.1.0/f443b9bc5f2c966026f71ab58c4afad86bf74ee5/ktor-serialization-kotlinx-json-jvm-2.1.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/io.ktor/ktor-events-jvm/2.1.0/ef58c3c3d012ab115011af1e2f2afc357433c220/ktor-events-jvm-2.1.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/io.ktor/ktor-websocket-serialization-jvm/2.1.0/d202979642d5091a18587b3f81269c0a9a8acc78/ktor-websocket-serialization-jvm-2.1.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/io.ktor/ktor-serialization-kotlinx-jvm/2.1.0/c852a1ac0196c9b3e9085b7d19e515f3774025f6/ktor-serialization-kotlinx-jvm-2.1.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/io.ktor/ktor-serialization-jvm/2.1.0/e1d36c91035d2eddd1f202411248a4b6944ea387/ktor-serialization-jvm-2.1.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/io.ktor/ktor-websockets-jvm/2.1.0/17015d23235fd5e784230875e630f6bd1418fdf8/ktor-websockets-jvm-2.1.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/io.ktor/ktor-http-jvm/2.1.0/eff494019c2c1a0e9db6e13533d241ecd6bbc822/ktor-http-jvm-2.1.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/io.ktor/ktor-utils-jvm/2.1.0/1b3ca53f817d054ba00c8a3e92a50ba655428c71/ktor-utils-jvm-2.1.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/io.ktor/ktor-io-jvm/2.1.0/ccd958db554677538c21515a0acd62862bb6b2a0/ktor-io-jvm-2.1.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-jdk8/1.6.4/5bc4b0bf6fd90fc190fd2f17e919c74c6274cb71/kotlinx-coroutines-jdk8-1.6.4.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/b6ca92c9fee67c11aa1c006f4111736a/transformed/mvvm-core-debug-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.6.4/2c997cd1c0ef33f3e751d3831929aeff1390cb30/kotlinx-coroutines-core-jvm-1.6.4.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/18a6e4bf6da7a45b8f73a7e121a31216/transformed/koin-android-3.2.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/8cba81a72b4d17989cbebed43dafe4dc/transformed/activity-ktx-1.4.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/95a0884de83ff6dd9e63ce3d473745c9/transformed/lifecycle-viewmodel-ktx-2.3.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/e1e2fa4de482fa1557fe608554d7e1b6/transformed/lifecycle-runtime-ktx-2.3.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-android/1.6.4/f955fc8b2ad196e2f4429598440e15f7492eeb2b/kotlinx-coroutines-android-1.6.4.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/io.insert-koin/koin-core-jvm/3.2.0/ab77b9faefb87ddb5801b9ccfe70d7faff943192/koin-core-jvm-3.2.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/8031c704e30c6171c3c3a95da98e23b7/transformed/library-base-debug-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/10ac07503f42cce66e133e998a87e7b8/transformed/cinterop-debug-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.7.10/d70d7d2c56371f7aa18f32e984e3e2e998fe9081/kotlin-stdlib-jdk8-1.7.10.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-junit/1.7.0/8d0259795071f612031901db4fcbb93cf24f25b4/kotlin-test-junit-1.7.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/junit/junit/4.13.2/8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12/junit-4.13.2.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-json-jvm/1.3.3/6298c404c1159685fb657f15fa5b78630da58c96/kotlinx-serialization-json-jvm-1.3.3.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-parcelize-runtime/1.7.0/bdd55d654d63f008fd87f08dd166727bfdb6450a/kotlin-parcelize-runtime-1.7.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test/1.7.0/970db9954386d1bb9b6666e3e49458cc8cef17b7/kotlin-test-1.7.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.7.10/1ef73fee66f45d52c67e2aca12fd945dbe0659bf/kotlin-stdlib-jdk7-1.7.10.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-core-jvm/1.3.3/3c22103b5d8e3c262db19e85d90405ca78b49efd/kotlinx-serialization-core-jvm-1.3.3.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions-runtime/1.7.0/3ff1451c5bb42b21e2efbcddad9188ac213518ca/kotlin-android-extensions-runtime-1.7.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/f0c08b4765f9ceba0444d00f2022cc1b/transformed/appcompat-1.4.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/32f54117221c62a4003dee81d54980b2/transformed/lifecycle-extensions-2.2.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/f168fe83312a1964bd7f9de4f2b4324d/transformed/fragment-1.4.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/b409e7a54ec4a5b3ac9630db5a9cdd0a/transformed/activity-1.4.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/e0e7b533e9bdfb31eabff8f950f50179/transformed/core-ktx-1.2.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/a500d91d8fcd531a18ba6b305b5566d0/transformed/savedstate-ktx-1.1.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.7.10/d2abf9e77736acc4450dc4a3f707fa2c10f5099d/kotlin-stdlib-1.7.10.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.36/6c62681a2f655b49963a5983b8b0950a6120ae14/slf4j-api-1.7.36.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common-java8/2.4.1/5b8f86fea035328fc9e8c660773037a3401ce25f/lifecycle-common-java8-2.4.1.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/1752677cb35c43f3969f6c430575ae1e/transformed/ui-text-1.1.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/2abebc2138c780713d348b63b27bcd62/transformed/ui-graphics-1.1.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/f888945447c675a9e3fa6c894ef38b99/transformed/ui-unit-1.1.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/8d7b4c6a4bd193cd27b6fb507cd927b3/transformed/ui-geometry-1.1.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/c51451c30631b15bc5df107232a203eb/transformed/appcompat-resources-1.4.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/a728857bd73595c488bd0a487d1d37fc/transformed/drawerlayout-1.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/3c2dd1ef12a1989ad348837a3f60ea63/transformed/viewpager-1.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/2de254bbb28647ebae5c610e55e4a556/transformed/loader-1.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/78b4f9fb5b166e3a94982348ddf35138/transformed/vectordrawable-animated-1.1.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/d98e173e1b103401d3e9a8ebf4d7ea19/transformed/vectordrawable-1.1.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/a47b2c927cadbaf5f6a5d37c78999460/transformed/customview-1.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/642e0ac2d9ba9d6a0b186bce64f14f11/transformed/core-1.7.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/cc6603e7d23ef7d1da228825c8b033ec/transformed/lifecycle-runtime-2.4.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/f8e3ede647c969e0e4e82a3359c7ab90/transformed/lifecycle-livedata-2.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/472a62ddcb99232fd4d2d3480a4c3395/transformed/core-runtime-2.1.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/androidx.arch.core/core-common/2.1.0/b3152fc64428c9354344bd89848ecddc09b6f07e/core-common-2.1.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/b9e2fbf96ae655cfa5e199b65850a4f2/transformed/lifecycle-viewmodel-savedstate-2.3.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/7b301c2dc47a3fd31230f38a91f0fb48/transformed/lifecycle-livedata-core-2.3.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.4.1/1fdb7349701e9cf2f0a69fc10642b6fef6bb3e12/lifecycle-common-2.4.1.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/822b80a3e60389dcce15726fa94a9e29/transformed/lifecycle-viewmodel-2.3.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/5c7175db2f2ae5fc4268876a6cd0b745/transformed/cursoradapter-1.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/22c5f46b66cd2a808d86a8e85f27a775/transformed/savedstate-1.1.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/5038c51b86f7b3c349d17f052ef6b63f/transformed/versionedparcelable-1.1.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/androidx.collection/collection/1.1.0/1f27220b47669781457de0d600849a5de0e89909/collection-1.1.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/ee08a786161e29906181fefa3f5d2981/transformed/interpolator-1.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/androidx.annotation/annotation/1.3.0/21f49f5f9b85fc49de712539f79123119740595/annotation-1.3.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/7ad1f25dd97bdf1a082b9b25a2a34369/transformed/annotation-experimental-1.1.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/transforms-3/8d46ba994ee4a1b541f8a822b0afa384/transformed/kermit-debug-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/io.realm.kotlin/jni-swig-stub/1.0.2/4470a24a0d070cf66cfd1e2a76eeb38f9470d2b9/jni-swig-stub-1.0.2.jar</arg>
                 <arg>$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-32/android.jar</arg>
                 <arg>$USER_HOME$/AppData/Local/Android/Sdk/build-tools/30.0.3/core-lambda-stubs.jar</arg>
               </args>
@@ -122,29 +121,29 @@
             </arrayArg>
             <arrayArg name="pluginClasspaths">
               <args>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm.kotlin/plugin-compiler/1.0.2/2b02c73951d91dc5a3618ec9282bdb7b8a5897ae/plugin-compiler-1.0.2.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-parcelize-compiler/1.7.0/689aa93ef1c15d507cc92d24500524d048347bd9/kotlin-parcelize-compiler-1.7.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.7.0/361e20f57ad4f772a9500bd795d2ab0956a91b75/kotlin-gradle-plugin-api-1.7.0-gradle70.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm.kotlin/cinterop-jvm/1.0.2/2fde665577b5aa886b4ca20576faaf64df9bfdb0/cinterop-jvm-1.0.2.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.6.0-native-mt/955e2fec444114841908ebc0c7df4ba36e5aa3a2/kotlinx-coroutines-core-jvm-1.6.0-native-mt.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.6.10/e80fe6ac3c3573a80305f5ec43f86b829e8ab53d/kotlin-stdlib-jdk8-1.6.10.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.7.0/4d09852239f61842072b40b524882fa3caaed371/kotlin-compiler-embeddable-1.7.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-jvm/1.7.0/d03ca0d4594387836eecc7c67cec679f34172b36/kotlin-scripting-jvm-1.7.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-common/1.7.0/1a19885731b40f0340c90c3edd70c157be90ac8c/kotlin-scripting-common-1.7.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.6.10/e1c380673654a089c4f0c9f83d0ddfdc1efdb498/kotlin-stdlib-jdk7-1.6.10.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.7.0/e660b0079fdaf744dc9cc7f6f3aa3c761ec839b0/kotlin-reflect-1.7.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.7.0/a5f42c684ad9003160ef0d0f693ecf0ba7b13549/kotlin-stdlib-1.7.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-native-utils/1.7.0/d3e9a6f19ffad631d686523709939a20632ba295/kotlin-native-utils-1.7.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-project-model/1.7.0/e048320d1bc516909c5c5034adf33928c4987dee/kotlin-project-model-1.7.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-tooling-core/1.7.0/8fc54e880cf9ea73396f2844a2d3aa76bdcbcfbb/kotlin-tooling-core-1.7.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.7.0/51736992f422993a1e741051bdf3c12801bc1ca1/kotlin-stdlib-common-1.7.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.7.0/3acea1d447587e61bc3e1b3ed6227d9e9ed4ddf1/kotlin-script-runtime-1.7.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-embeddable/1.7.0/fd56798de80825c673ac93808284c5198ffa2b50/kotlin-daemon-embeddable-1.7.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.intellij.deps/trove4j/1.0.20200330/3afb14d5f9ceb459d724e907a21145e8ff394f02/trove4j-1.0.20200330.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.6.0/330f2244e9030119ab3030fc3fededc86713d9cc/jna-5.6.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-util-io/1.7.0/d56995b7c3a460e15892b8bb992a23e8f2288b6f/kotlin-util-io-1.7.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm.kotlin/jni-swig-stub/1.0.2/4470a24a0d070cf66cfd1e2a76eeb38f9470d2b9/jni-swig-stub-1.0.2.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/io.realm.kotlin/plugin-compiler/1.0.2/2b02c73951d91dc5a3618ec9282bdb7b8a5897ae/plugin-compiler-1.0.2.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-parcelize-compiler/1.7.0/689aa93ef1c15d507cc92d24500524d048347bd9/kotlin-parcelize-compiler-1.7.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.7.0/361e20f57ad4f772a9500bd795d2ab0956a91b75/kotlin-gradle-plugin-api-1.7.0-gradle70.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/io.realm.kotlin/cinterop-jvm/1.0.2/2fde665577b5aa886b4ca20576faaf64df9bfdb0/cinterop-jvm-1.0.2.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.6.0-native-mt/955e2fec444114841908ebc0c7df4ba36e5aa3a2/kotlinx-coroutines-core-jvm-1.6.0-native-mt.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.6.10/e80fe6ac3c3573a80305f5ec43f86b829e8ab53d/kotlin-stdlib-jdk8-1.6.10.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.7.0/4d09852239f61842072b40b524882fa3caaed371/kotlin-compiler-embeddable-1.7.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-jvm/1.7.0/d03ca0d4594387836eecc7c67cec679f34172b36/kotlin-scripting-jvm-1.7.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-common/1.7.0/1a19885731b40f0340c90c3edd70c157be90ac8c/kotlin-scripting-common-1.7.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.6.10/e1c380673654a089c4f0c9f83d0ddfdc1efdb498/kotlin-stdlib-jdk7-1.6.10.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.7.0/e660b0079fdaf744dc9cc7f6f3aa3c761ec839b0/kotlin-reflect-1.7.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.7.0/a5f42c684ad9003160ef0d0f693ecf0ba7b13549/kotlin-stdlib-1.7.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-native-utils/1.7.0/d3e9a6f19ffad631d686523709939a20632ba295/kotlin-native-utils-1.7.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-project-model/1.7.0/e048320d1bc516909c5c5034adf33928c4987dee/kotlin-project-model-1.7.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-tooling-core/1.7.0/8fc54e880cf9ea73396f2844a2d3aa76bdcbcfbb/kotlin-tooling-core-1.7.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.7.0/51736992f422993a1e741051bdf3c12801bc1ca1/kotlin-stdlib-common-1.7.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.7.0/3acea1d447587e61bc3e1b3ed6227d9e9ed4ddf1/kotlin-script-runtime-1.7.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-embeddable/1.7.0/fd56798de80825c673ac93808284c5198ffa2b50/kotlin-daemon-embeddable-1.7.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.intellij.deps/trove4j/1.0.20200330/3afb14d5f9ceb459d724e907a21145e8ff394f02/trove4j-1.0.20200330.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.6.0/330f2244e9030119ab3030fc3fededc86713d9cc/jna-5.6.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-util-io/1.7.0/d56995b7c3a460e15892b8bb992a23e8f2288b6f/kotlin-util-io-1.7.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/io.realm.kotlin/jni-swig-stub/1.0.2/4470a24a0d070cf66cfd1e2a76eeb38f9470d2b9/jni-swig-stub-1.0.2.jar</arg>
                 <arg>$KOTLIN_BUNDLED$/lib/kotlinx-serialization-compiler-plugin.jar</arg>
               </args>
             </arrayArg>
@@ -192,13 +191,13 @@
     <orderEntry type="module-library" scope="TEST">
       <library name="Gradle: org.jetbrains:annotations:13.0">
         <CLASSES>
-          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar!/" />
         </CLASSES>
         <JAVADOC>
-          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/73368c3b0887f3adc2c2730dd1b95d7c3781aaf3/annotations-13.0-javadoc.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/73368c3b0887f3adc2c2730dd1b95d7c3781aaf3/annotations-13.0-javadoc.jar!/" />
         </JAVADOC>
         <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/5991ca87ef1fb5544943d9abc5a9a37583fabe03/annotations-13.0-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/5991ca87ef1fb5544943d9abc5a9a37583fabe03/annotations-13.0-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -279,7 +278,6 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.drawerlayout:drawerlayout:1.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: io.realm.kotlin:library-base-android-debug:1.0.2@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: io.realm.kotlin:cinterop-android-debug:1.0.2@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.github.aakira:napier-android-debug:2.6.1@aar" level="project" />
   </component>
   <component name="TestModuleProperties" production-module="Fake_Store_App.shared.main" />
 </module>

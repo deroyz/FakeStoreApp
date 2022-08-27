@@ -20,24 +20,24 @@
           <arrayArguments>
             <arrayArg name="pluginClasspaths">
               <args>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm.kotlin/plugin-compiler/1.0.2/2b02c73951d91dc5a3618ec9282bdb7b8a5897ae/plugin-compiler-1.0.2.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.7.0/361e20f57ad4f772a9500bd795d2ab0956a91b75/kotlin-gradle-plugin-api-1.7.0-gradle70.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.6.10/1cbe9c92c12a94eea200d23c2bbaedaf3daf5132/kotlin-reflect-1.6.10.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm.kotlin/cinterop-jvm/1.0.2/2fde665577b5aa886b4ca20576faaf64df9bfdb0/cinterop-jvm-1.0.2.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.6.0-native-mt/955e2fec444114841908ebc0c7df4ba36e5aa3a2/kotlinx-coroutines-core-jvm-1.6.0-native-mt.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.6.10/e80fe6ac3c3573a80305f5ec43f86b829e8ab53d/kotlin-stdlib-jdk8-1.6.10.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-jvm/1.7.0/d03ca0d4594387836eecc7c67cec679f34172b36/kotlin-scripting-jvm-1.7.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-common/1.7.0/1a19885731b40f0340c90c3edd70c157be90ac8c/kotlin-scripting-common-1.7.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.6.10/e1c380673654a089c4f0c9f83d0ddfdc1efdb498/kotlin-stdlib-jdk7-1.6.10.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.7.0/a5f42c684ad9003160ef0d0f693ecf0ba7b13549/kotlin-stdlib-1.7.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-native-utils/1.7.0/d3e9a6f19ffad631d686523709939a20632ba295/kotlin-native-utils-1.7.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-project-model/1.7.0/e048320d1bc516909c5c5034adf33928c4987dee/kotlin-project-model-1.7.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-tooling-core/1.7.0/8fc54e880cf9ea73396f2844a2d3aa76bdcbcfbb/kotlin-tooling-core-1.7.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.7.0/51736992f422993a1e741051bdf3c12801bc1ca1/kotlin-stdlib-common-1.7.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-util-io/1.7.0/d56995b7c3a460e15892b8bb992a23e8f2288b6f/kotlin-util-io-1.7.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.7.0/3acea1d447587e61bc3e1b3ed6227d9e9ed4ddf1/kotlin-script-runtime-1.7.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm.kotlin/jni-swig-stub/1.0.2/4470a24a0d070cf66cfd1e2a76eeb38f9470d2b9/jni-swig-stub-1.0.2.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/io.realm.kotlin/plugin-compiler/1.0.2/2b02c73951d91dc5a3618ec9282bdb7b8a5897ae/plugin-compiler-1.0.2.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.7.0/361e20f57ad4f772a9500bd795d2ab0956a91b75/kotlin-gradle-plugin-api-1.7.0-gradle70.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.6.10/1cbe9c92c12a94eea200d23c2bbaedaf3daf5132/kotlin-reflect-1.6.10.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/io.realm.kotlin/cinterop-jvm/1.0.2/2fde665577b5aa886b4ca20576faaf64df9bfdb0/cinterop-jvm-1.0.2.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.6.0-native-mt/955e2fec444114841908ebc0c7df4ba36e5aa3a2/kotlinx-coroutines-core-jvm-1.6.0-native-mt.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.6.10/e80fe6ac3c3573a80305f5ec43f86b829e8ab53d/kotlin-stdlib-jdk8-1.6.10.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-jvm/1.7.0/d03ca0d4594387836eecc7c67cec679f34172b36/kotlin-scripting-jvm-1.7.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-common/1.7.0/1a19885731b40f0340c90c3edd70c157be90ac8c/kotlin-scripting-common-1.7.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.6.10/e1c380673654a089c4f0c9f83d0ddfdc1efdb498/kotlin-stdlib-jdk7-1.6.10.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.7.0/a5f42c684ad9003160ef0d0f693ecf0ba7b13549/kotlin-stdlib-1.7.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-native-utils/1.7.0/d3e9a6f19ffad631d686523709939a20632ba295/kotlin-native-utils-1.7.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-project-model/1.7.0/e048320d1bc516909c5c5034adf33928c4987dee/kotlin-project-model-1.7.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-tooling-core/1.7.0/8fc54e880cf9ea73396f2844a2d3aa76bdcbcfbb/kotlin-tooling-core-1.7.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.7.0/51736992f422993a1e741051bdf3c12801bc1ca1/kotlin-stdlib-common-1.7.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-util-io/1.7.0/d56995b7c3a460e15892b8bb992a23e8f2288b6f/kotlin-util-io-1.7.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.7.0/3acea1d447587e61bc3e1b3ed6227d9e9ed4ddf1/kotlin-script-runtime-1.7.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/io.realm.kotlin/jni-swig-stub/1.0.2/4470a24a0d070cf66cfd1e2a76eeb38f9470d2b9/jni-swig-stub-1.0.2.jar</arg>
                 <arg>$KOTLIN_BUNDLED$/lib/kotlinx-serialization-compiler-plugin.jar</arg>
               </args>
             </arrayArg>
@@ -62,7 +62,7 @@
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/co.touchlab/kermit/0.3.0-m1/a57ee1425ba440479de9054ebf3f38857a9bd24a/kermit-0.3.0-m1-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/co.touchlab/kermit/0.3.0-m1/a57ee1425ba440479de9054ebf3f38857a9bd24a/kermit-0.3.0-m1-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -73,7 +73,7 @@
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/co.touchlab/kermit/0.3.0-m1/a57ee1425ba440479de9054ebf3f38857a9bd24a/kermit-0.3.0-m1-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/co.touchlab/kermit/0.3.0-m1/a57ee1425ba440479de9054ebf3f38857a9bd24a/kermit-0.3.0-m1-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -86,7 +86,7 @@
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-core/0.13.1/cf71c5321ecef9cea1c4dc04e1128f45f2a82ea/mvvm-core-0.13.1-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-core/0.13.1/cf71c5321ecef9cea1c4dc04e1128f45f2a82ea/mvvm-core-0.13.1-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -97,7 +97,7 @@
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-core/0.13.1/cf71c5321ecef9cea1c4dc04e1128f45f2a82ea/mvvm-core-0.13.1-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-core/0.13.1/cf71c5321ecef9cea1c4dc04e1128f45f2a82ea/mvvm-core-0.13.1-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -119,7 +119,7 @@
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-internal/0.13.1/46a8145586eb63d33c562c34c45872084d44cba5/mvvm-internal-0.13.1-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-internal/0.13.1/46a8145586eb63d33c562c34c45872084d44cba5/mvvm-internal-0.13.1-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -130,7 +130,7 @@
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-internal/0.13.1/46a8145586eb63d33c562c34c45872084d44cba5/mvvm-internal-0.13.1-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-internal/0.13.1/46a8145586eb63d33c562c34c45872084d44cba5/mvvm-internal-0.13.1-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -141,7 +141,7 @@
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-internal/0.13.1/46a8145586eb63d33c562c34c45872084d44cba5/mvvm-internal-0.13.1-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-internal/0.13.1/46a8145586eb63d33c562c34c45872084d44cba5/mvvm-internal-0.13.1-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -152,7 +152,7 @@
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-internal/0.13.1/46a8145586eb63d33c562c34c45872084d44cba5/mvvm-internal-0.13.1-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../../Program Files/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-internal/0.13.1/46a8145586eb63d33c562c34c45872084d44cba5/mvvm-internal-0.13.1-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -169,8 +169,6 @@
     <orderEntry type="library" scope="TEST" name="Gradle: io.insert-koin:koin-core:commonMain:3.2.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: io.insert-koin:koin-core:darwinMain:3.2.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: io.insert-koin:koin-core:nativeMain:3.2.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.github.aakira:napier:commonMain:2.6.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.github.aakira:napier:darwinMain:2.6.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-test-common:1.7.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: io.realm.kotlin:library-base:1.0.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.7.0" level="project" />

@@ -1,6 +1,5 @@
 package kim.young.fakestoreapp.shared.data.remote
 
-import io.github.aakira.napier.Napier
 import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.plugins.*

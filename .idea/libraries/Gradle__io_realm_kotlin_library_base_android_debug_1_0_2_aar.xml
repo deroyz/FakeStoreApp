@@ -11,15 +11,20 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a1a9de46b6c364bfb5db3dd60b8bf862/transformed/library-base-debug/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1d5162b647841b9317c43a215686d9f6/transformed/library-base-debug/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/383d70be0b453dc12dbe0d248c0f40bf/transformed/library-base-debug/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/53aaea7ab1e7e861e601bc3902041fa2/transformed/library-base-debug/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/53aaea7ab1e7e861e601bc3902041fa2/transformed/library-base-debug/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/53aaea7ab1e7e861e601bc3902041fa2/transformed/library-base-debug/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b8f53bd129e8fc71cdf4639b923004dc/transformed/library-base-debug/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7ebe8df1c8c2b34b22024e0a8056ce2a/transformed/library-base-debug/res" />
+      <root url="file://$PROJECT_DIR$/../../Program Files/caches/transforms-3/7ebe8df1c8c2b34b22024e0a8056ce2a/transformed/library-base-debug/res" />
+      <root url="file://$PROJECT_DIR$/../../Program Files/caches/transforms-3/7ebe8df1c8c2b34b22024e0a8056ce2a/transformed/library-base-debug/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/transforms-3/7ebe8df1c8c2b34b22024e0a8056ce2a/transformed/library-base-debug/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm.kotlin/library-base-android-debug/1.0.2/c911e9ad5f101cc371f1016645085949698c7088/library-base-android-debug-1.0.2-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/io.realm.kotlin/library-base-android-debug/1.0.2/c911e9ad5f101cc371f1016645085949698c7088/library-base-android-debug-1.0.2-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm.kotlin/library-base-android-debug/1.0.2/cf8d8190ff7f6283de1510ed8c2628fff1b0b90b/library-base-android-debug-1.0.2-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/io.realm.kotlin/library-base-android-debug/1.0.2/cf8d8190ff7f6283de1510ed8c2628fff1b0b90b/library-base-android-debug-1.0.2-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

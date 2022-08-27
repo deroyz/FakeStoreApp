@@ -4,6 +4,7 @@ plugins {
     id("kotlin-parcelize")
     id("kotlin-android")
     id("kotlin-kapt")
+    id("com.google.devtools.ksp") version "1.6.10-1.0.2"
 }
 
 android {
@@ -20,19 +21,11 @@ android {
             isMinifyEnabled = false
         }
     }
-//    buildFeatures {
-//        viewBinding = true
-//    }
+
     buildFeatures {
         compose = true
     }
-//    compileOptions {
-//        sourceCompatibility = JavaVersion.VERSION_1_8
-//        targetCompatibility = JavaVersion.VERSION_1_8
-//    }
-//    kotlinOptions {
-//        jvmTarget = "1.8"
-//    }
+
     composeOptions {
         kotlinCompilerExtensionVersion = Versions.compose
     }
@@ -56,4 +49,7 @@ dependencies {
     implementation(Libraries.Compose.coil)
     implementation(Libraries.Compose.activity)
     implementation(Libraries.Compose.navigation)
+
+//    implementation(Libraries.composeDestinationPlugin)
+
 }

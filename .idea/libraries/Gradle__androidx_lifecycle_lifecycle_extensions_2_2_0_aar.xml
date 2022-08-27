@@ -19,13 +19,17 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5151c06503c72edbdeefe0e704fb3eca/transformed/lifecycle-extensions-2.2.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/52b3bfc354836a2b43191c48bbbe5365/transformed/lifecycle-extensions-2.2.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/aee68b8ca87ca4127640ccad3473d0f1/transformed/lifecycle-extensions-2.2.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/096475b98b43614aaa5fabcda8e132ca/transformed/lifecycle-extensions-2.2.0/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/096475b98b43614aaa5fabcda8e132ca/transformed/lifecycle-extensions-2.2.0/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/096475b98b43614aaa5fabcda8e132ca/transformed/lifecycle-extensions-2.2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a4758801cf443b1585415c58f94d1939/transformed/lifecycle-extensions-2.2.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8e8df1df9de4d7cb060769a999fc48fe/transformed/lifecycle-extensions-2.2.0/res" />
+      <root url="file://$PROJECT_DIR$/../../Program Files/caches/transforms-3/8e8df1df9de4d7cb060769a999fc48fe/transformed/lifecycle-extensions-2.2.0/res" />
+      <root url="file://$PROJECT_DIR$/../../Program Files/caches/transforms-3/8e8df1df9de4d7cb060769a999fc48fe/transformed/lifecycle-extensions-2.2.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/transforms-3/8e8df1df9de4d7cb060769a999fc48fe/transformed/lifecycle-extensions-2.2.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-extensions/2.2.0/32e7a190b796f6853c89f5d6b92b64a6fe8318d3/lifecycle-extensions-2.2.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-extensions/2.2.0/32e7a190b796f6853c89f5d6b92b64a6fe8318d3/lifecycle-extensions-2.2.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

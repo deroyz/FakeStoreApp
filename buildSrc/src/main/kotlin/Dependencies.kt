@@ -52,6 +52,7 @@ object Libraries {
     const val ktorJson              = "io.ktor:ktor-serialization-kotlinx-json:${Versions.ktor}"
     const val ktorClientJson    = "io.ktor:ktor-client-json:${Versions.ktor}"
 
+    const val composeDestinationPlugin = "io.github.raamcosta.compose-destinations:ksp:$1.2.0"
 
     const val realmPlugin    = "io.realm.kotlin:gradle-plugin:${Versions.realm}"
     const val realm             = "io.realm.kotlin:library-base:${Versions.realm}"

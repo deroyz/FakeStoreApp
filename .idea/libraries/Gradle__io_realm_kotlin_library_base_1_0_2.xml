@@ -2,10 +2,12 @@
   <library name="Gradle: io.realm.kotlin:library-base:1.0.2">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm.kotlin/library-base/1.0.2/1468df68fd6a79661c5a30a2689123e78cf47a8c/library-base-metadata-1.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/io.realm.kotlin/library-base/1.0.2/1468df68fd6a79661c5a30a2689123e78cf47a8c/library-base-metadata-1.0.2.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.realm.kotlin/library-base/1.0.2/76021930dc3fd2d42011a33cdbdbb4ff82d8ebd8/library-base-1.0.2-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/io.realm.kotlin/library-base/1.0.2/76021930dc3fd2d42011a33cdbdbb4ff82d8ebd8/library-base-1.0.2-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

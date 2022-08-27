@@ -15,13 +15,17 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/93c4977f716bad9fc8246519c19715cc/transformed/vectordrawable-1.1.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d5e2f33e1596f8a1bcdc0aefb6bf5dfe/transformed/vectordrawable-1.1.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5f86291d2bcf71626146773c5d5e08e7/transformed/vectordrawable-1.1.0/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/673060bf6fe25145b08fe96cbcd812bc/transformed/vectordrawable-1.1.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/673060bf6fe25145b08fe96cbcd812bc/transformed/vectordrawable-1.1.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/673060bf6fe25145b08fe96cbcd812bc/transformed/vectordrawable-1.1.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ad471ef6d75665111535f3bd75cbead8/transformed/vectordrawable-1.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/30e45da4ba2174b16e1d422c14ebf76c/transformed/vectordrawable-1.1.0/res" />
+      <root url="file://$PROJECT_DIR$/../../Program Files/caches/transforms-3/30e45da4ba2174b16e1d422c14ebf76c/transformed/vectordrawable-1.1.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../Program Files/caches/transforms-3/30e45da4ba2174b16e1d422c14ebf76c/transformed/vectordrawable-1.1.0/res" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/transforms-3/30e45da4ba2174b16e1d422c14ebf76c/transformed/vectordrawable-1.1.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.vectordrawable/vectordrawable/1.1.0/1e0694477eed874c50c54b547cc3e5a62a57a62b/vectordrawable-1.1.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/androidx.vectordrawable/vectordrawable/1.1.0/1e0694477eed874c50c54b547cc3e5a62a57a62b/vectordrawable-1.1.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

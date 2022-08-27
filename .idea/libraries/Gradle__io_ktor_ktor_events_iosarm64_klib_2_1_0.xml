@@ -2,10 +2,12 @@
   <library name="Gradle: io.ktor:ktor-events-iosarm64:klib:2.1.0" type="kotlin.native">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-events-iosarm64/2.1.0/e314350d6ec8feff2aeeabec2c7bf889309be994/ktor-events.klib!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/io.ktor/ktor-events-iosarm64/2.1.0/e314350d6ec8feff2aeeabec2c7bf889309be994/ktor-events.klib!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-events-iosarm64/2.1.0/90f9a9a326a28f24b2518e6006c292574232e4b0/ktor-events-iosarm64-2.1.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/io.ktor/ktor-events-iosarm64/2.1.0/90f9a9a326a28f24b2518e6006c292574232e4b0/ktor-events-iosarm64-2.1.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

@@ -6,6 +6,7 @@
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/co.touchlab/stately-concurrency/1.2.0/b251ea3a5400756a17db3b4546d5b7b871ec67ac/stately-concurrency-1.2.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/co.touchlab/stately-concurrency/1.2.0/b251ea3a5400756a17db3b4546d5b7b871ec67ac/stately-concurrency-1.2.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

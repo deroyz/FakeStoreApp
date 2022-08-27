@@ -6,6 +6,7 @@
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core/1.6.4/f83eca53d0ca9fb7b4b21980e52354d443a3e354/kotlinx-coroutines-core-1.6.4-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core/1.6.4/f83eca53d0ca9fb7b4b21980e52354d443a3e354/kotlinx-coroutines-core-1.6.4-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

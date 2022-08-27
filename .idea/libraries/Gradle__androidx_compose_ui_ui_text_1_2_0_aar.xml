@@ -1,13 +1,14 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.compose.ui:ui-text:1.2.0@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d54e84843abadf4e13f71f073ced2f66/transformed/ui-text-1.2.0/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d54e84843abadf4e13f71f073ced2f66/transformed/ui-text-1.2.0/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/d54e84843abadf4e13f71f073ced2f66/transformed/ui-text-1.2.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Program Files/caches/transforms-3/b16aec7e7e345dd0f9e2749a70e14b74/transformed/ui-text-1.2.0/res" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/transforms-3/b16aec7e7e345dd0f9e2749a70e14b74/transformed/ui-text-1.2.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Program Files/caches/transforms-3/b16aec7e7e345dd0f9e2749a70e14b74/transformed/ui-text-1.2.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.compose.ui/ui-text/1.2.0/8b03831a68cacd9a10cdb3332fb07aa31ed430fc/ui-text-1.2.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/androidx.compose.ui/ui-text/1.2.0/8b03831a68cacd9a10cdb3332fb07aa31ed430fc/ui-text-1.2.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

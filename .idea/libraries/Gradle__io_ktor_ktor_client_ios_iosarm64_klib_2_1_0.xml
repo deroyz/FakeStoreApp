@@ -2,10 +2,12 @@
   <library name="Gradle: io.ktor:ktor-client-ios-iosarm64:klib:2.1.0" type="kotlin.native">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-client-ios-iosarm64/2.1.0/8553057a050a20e8f3aeea1ac405e16058aa6922/ktor-client-ios.klib!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/io.ktor/ktor-client-ios-iosarm64/2.1.0/8553057a050a20e8f3aeea1ac405e16058aa6922/ktor-client-ios.klib!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-client-ios-iosarm64/2.1.0/c481305dfdb928ad08d19a7edbb4c79d453eecf3/ktor-client-ios-iosarm64-2.1.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/io.ktor/ktor-client-ios-iosarm64/2.1.0/c481305dfdb928ad08d19a7edbb4c79d453eecf3/ktor-client-ios-iosarm64-2.1.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

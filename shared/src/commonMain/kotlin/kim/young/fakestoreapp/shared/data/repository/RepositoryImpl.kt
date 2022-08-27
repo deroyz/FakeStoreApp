@@ -29,21 +29,18 @@ class RepositoryImpl(
     ) {
         flow { emit(apiService.getProductListFromApi()) }.collect() { dataState ->
             when (dataState) {
+
                 is DataState.Success -> {
-                    realmService.insertProductList(
-                        dataState.data?.asDatabaseModel() ?: emptyList()
-                    )
+                    realmService.insertProductList(dataState.data?.asDatabaseModel() ?: emptyList())
                     data(dataState.data?.asDomainModel() ?: emptyList())
                 }
+
                 is DataState.Error -> {
-                    onError(
-                        dataState.error
-                    )
+                    onError(dataState.error)
                 }
+
                 else -> {
-                    onError(
-                        dataState.error
-                    )
+                    onError(dataState.error)
                 }
             }
         }
@@ -54,8 +51,10 @@ class RepositoryImpl(
         channelFlow<DataState<List<ProductDomainModel>>> {
 
             realmService.getProductList().collect() { resultsChange ->
+
                 if (resultsChange.list.isEmpty()) {
-                    println("======> List is Empty")
+
+                    println("====================================> List is Empty")
                     getProductListFromApi(
                         { message ->
                             send(responseHandler.handleException(message.message))
@@ -65,8 +64,9 @@ class RepositoryImpl(
                             send(responseHandler.handleSuccess(data))
                         }
                     )
+
                 } else {
-                    println("======> List is full")
+                    println("=====================================> List is full")
                     send(responseHandler.handleSuccess(resultsChange.list.asDomainModel()))
                 }
             }

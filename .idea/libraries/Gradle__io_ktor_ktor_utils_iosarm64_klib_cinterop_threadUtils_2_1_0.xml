@@ -2,10 +2,12 @@
   <library name="Gradle: io.ktor:ktor-utils-iosarm64:klib:cinterop-threadUtils:2.1.0" type="kotlin.native">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-utils-iosarm64/2.1.0/2d2d5199adc186740b43c93d71b4c75b1be63a62/ktor-utils-cinterop-threadUtils.klib!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/io.ktor/ktor-utils-iosarm64/2.1.0/2d2d5199adc186740b43c93d71b4c75b1be63a62/ktor-utils-cinterop-threadUtils.klib!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-utils-iosarm64/2.1.0/acd19391b2dff014c9cd36773ce82124810ae9f6/ktor-utils-iosarm64-2.1.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/io.ktor/ktor-utils-iosarm64/2.1.0/acd19391b2dff014c9cd36773ce82124810ae9f6/ktor-utils-iosarm64-2.1.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

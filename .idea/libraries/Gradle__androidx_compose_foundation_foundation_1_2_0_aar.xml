@@ -1,13 +1,14 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.compose.foundation:foundation:1.2.0@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/abcbb2b11ca56981c79460c04b2962d5/transformed/foundation-1.2.0/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/abcbb2b11ca56981c79460c04b2962d5/transformed/foundation-1.2.0/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/abcbb2b11ca56981c79460c04b2962d5/transformed/foundation-1.2.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Program Files/caches/transforms-3/dbef7d40f4bd41e6c31e94c4e2a70000/transformed/foundation-1.2.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/transforms-3/dbef7d40f4bd41e6c31e94c4e2a70000/transformed/foundation-1.2.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Program Files/caches/transforms-3/dbef7d40f4bd41e6c31e94c4e2a70000/transformed/foundation-1.2.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.compose.foundation/foundation/1.2.0/1e543f04a3ccbb0a7f13872edbe46eff50ebd06/foundation-1.2.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/androidx.compose.foundation/foundation/1.2.0/1e543f04a3ccbb0a7f13872edbe46eff50ebd06/foundation-1.2.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

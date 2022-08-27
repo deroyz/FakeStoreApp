@@ -2,10 +2,12 @@
   <library name="Gradle: dev.icerock.moko:mvvm-internal-iosarm64:klib:0.13.1" type="kotlin.native">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-internal-iosarm64/0.13.1/930698f07c6911b19de2740b1232f3e3fab57d59/mvvm-internal.klib!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-internal-iosarm64/0.13.1/930698f07c6911b19de2740b1232f3e3fab57d59/mvvm-internal.klib!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-internal-iosarm64/0.13.1/ea65287e60e47049cbe0ae06784278ebc1bb7c27/mvvm-internal-iosarm64-0.13.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-internal-iosarm64/0.13.1/ea65287e60e47049cbe0ae06784278ebc1bb7c27/mvvm-internal-iosarm64-0.13.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

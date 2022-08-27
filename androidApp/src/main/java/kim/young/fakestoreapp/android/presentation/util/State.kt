@@ -1,6 +1,7 @@
-package kim.young.fakestoreapp.android.presentation.products.state
+package kim.young.fakestoreapp.android.presentation
 
 import androidx.compose.foundation.layout.*
+import androidx.compose.material.CircularProgressIndicator
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.OutlinedButton
 import androidx.compose.material.Text
@@ -8,6 +9,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import kim.young.fakestoreapp.shared.presentation.products.ProductsScreenState
 
 @Composable
 fun Empty(
@@ -37,3 +39,38 @@ fun Empty(
         }
     }
 }
+
+
+
+@Composable
+fun Error(
+  state: ProductsScreenState
+) {
+    Column(
+        modifier = Modifier.fillMaxSize(),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center
+    ) {
+
+        Text(
+            text = state.error.errorMessage,
+            color = MaterialTheme.colors.onSurface,
+            style = MaterialTheme.typography.h5
+        )
+
+    }
+}
+
+@Composable
+fun Loading() {
+    Column(
+        modifier = Modifier.fillMaxSize(),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center
+    ) {
+
+        CircularProgressIndicator()
+
+    }
+}
+

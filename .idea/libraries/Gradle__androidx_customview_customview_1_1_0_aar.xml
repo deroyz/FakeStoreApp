@@ -15,13 +15,17 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0974991abcdfa57a78bf7e77aa539e37/transformed/customview-1.1.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3fd5dfdbe784e7e3724133c83bd54c30/transformed/customview-1.1.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/023ff28cedd5c39c74562d38f204d8dc/transformed/customview-1.1.0/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e957575c72b93975a0dca7af36ff7988/transformed/customview-1.1.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e957575c72b93975a0dca7af36ff7988/transformed/customview-1.1.0/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e957575c72b93975a0dca7af36ff7988/transformed/customview-1.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/dd984957ec44ae313883b0cfcd46feb7/transformed/customview-1.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3df084cf745cf90a7acea90487b6db4c/transformed/customview-1.1.0/res" />
+      <root url="file://$PROJECT_DIR$/../../Program Files/caches/transforms-3/3df084cf745cf90a7acea90487b6db4c/transformed/customview-1.1.0/res" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/transforms-3/3df084cf745cf90a7acea90487b6db4c/transformed/customview-1.1.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Program Files/caches/transforms-3/3df084cf745cf90a7acea90487b6db4c/transformed/customview-1.1.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.customview/customview/1.1.0/be631aafb1eb3f64c9cc57083a21a3321cf2e2e1/customview-1.1.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/androidx.customview/customview/1.1.0/be631aafb1eb3f64c9cc57083a21a3321cf2e2e1/customview-1.1.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

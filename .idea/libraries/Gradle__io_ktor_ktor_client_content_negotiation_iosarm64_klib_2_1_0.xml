@@ -2,10 +2,12 @@
   <library name="Gradle: io.ktor:ktor-client-content-negotiation-iosarm64:klib:2.1.0" type="kotlin.native">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-client-content-negotiation-iosarm64/2.1.0/d175e47560e73e8ca030660b2c82a2718e59e089/ktor-client-content-negotiation.klib!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/io.ktor/ktor-client-content-negotiation-iosarm64/2.1.0/d175e47560e73e8ca030660b2c82a2718e59e089/ktor-client-content-negotiation.klib!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-client-content-negotiation-iosarm64/2.1.0/2aafbfc1d679116c4932b38497ccfe6477b64133/ktor-client-content-negotiation-iosarm64-2.1.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/io.ktor/ktor-client-content-negotiation-iosarm64/2.1.0/2aafbfc1d679116c4932b38497ccfe6477b64133/ktor-client-content-negotiation-iosarm64-2.1.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

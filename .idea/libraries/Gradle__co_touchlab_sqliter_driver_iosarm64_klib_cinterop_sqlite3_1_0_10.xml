@@ -2,10 +2,12 @@
   <library name="Gradle: co.touchlab:sqliter-driver-iosarm64:klib:cinterop-sqlite3:1.0.10" type="kotlin.native">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/co.touchlab/sqliter-driver-iosarm64/1.0.10/661e2aec96d405f24865a0821f520daf89ae531b/sqliter-driver-cinterop-sqlite3.klib!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/co.touchlab/sqliter-driver-iosarm64/1.0.10/661e2aec96d405f24865a0821f520daf89ae531b/sqliter-driver-cinterop-sqlite3.klib!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/co.touchlab/sqliter-driver-iosarm64/1.0.10/82d192a1c60eb188c2e19bf0ccbc0409b73dd353/sqliter-driver-iosarm64-1.0.10-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/co.touchlab/sqliter-driver-iosarm64/1.0.10/82d192a1c60eb188c2e19bf0ccbc0409b73dd353/sqliter-driver-iosarm64-1.0.10-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

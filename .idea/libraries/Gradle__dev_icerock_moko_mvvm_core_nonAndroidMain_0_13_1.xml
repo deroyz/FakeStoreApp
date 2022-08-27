@@ -6,6 +6,7 @@
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-core/0.13.1/cf71c5321ecef9cea1c4dc04e1128f45f2a82ea/mvvm-core-0.13.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/dev.icerock.moko/mvvm-core/0.13.1/cf71c5321ecef9cea1c4dc04e1128f45f2a82ea/mvvm-core-0.13.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

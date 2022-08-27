@@ -6,6 +6,7 @@
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-serialization-kotlinx/2.1.0/df7782b5d1648f130b67039b29f73b4918f30dc/ktor-serialization-kotlinx-2.1.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/io.ktor/ktor-serialization-kotlinx/2.1.0/df7782b5d1648f130b67039b29f73b4918f30dc/ktor-serialization-kotlinx-2.1.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

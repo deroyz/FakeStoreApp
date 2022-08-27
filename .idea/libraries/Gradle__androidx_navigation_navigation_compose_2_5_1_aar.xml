@@ -1,13 +1,14 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.navigation:navigation-compose:2.5.1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/121d2a5cc2847c24a6f1ef5409bdfe95/transformed/navigation-compose-2.5.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/121d2a5cc2847c24a6f1ef5409bdfe95/transformed/navigation-compose-2.5.1/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/121d2a5cc2847c24a6f1ef5409bdfe95/transformed/navigation-compose-2.5.1/res" />
+      <root url="file://$PROJECT_DIR$/../../Program Files/caches/transforms-3/51316cf8128cedc378a04b50fb4f8d46/transformed/navigation-compose-2.5.1/res" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/transforms-3/51316cf8128cedc378a04b50fb4f8d46/transformed/navigation-compose-2.5.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Program Files/caches/transforms-3/51316cf8128cedc378a04b50fb4f8d46/transformed/navigation-compose-2.5.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.navigation/navigation-compose/2.5.1/8b1dd15fa0586e9f0850d9a3e3ece7bec443a75a/navigation-compose-2.5.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/androidx.navigation/navigation-compose/2.5.1/8b1dd15fa0586e9f0850d9a3e3ece7bec443a75a/navigation-compose-2.5.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

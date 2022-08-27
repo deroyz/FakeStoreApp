@@ -6,6 +6,7 @@
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-client-json/2.1.0/706b3b7307dcadf6a7bf747558abdf280403c212/ktor-client-json-2.1.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/io.ktor/ktor-client-json/2.1.0/706b3b7307dcadf6a7bf747558abdf280403c212/ktor-client-json-2.1.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

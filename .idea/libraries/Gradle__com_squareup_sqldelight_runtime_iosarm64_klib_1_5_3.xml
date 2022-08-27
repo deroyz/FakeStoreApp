@@ -2,10 +2,12 @@
   <library name="Gradle: com.squareup.sqldelight:runtime-iosarm64:klib:1.5.3" type="kotlin.native">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.sqldelight/runtime-iosarm64/1.5.3/c0e6ba2dff7dea2a440c869b653b3bf83edc4c59/runtime.klib!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/com.squareup.sqldelight/runtime-iosarm64/1.5.3/c0e6ba2dff7dea2a440c869b653b3bf83edc4c59/runtime.klib!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.sqldelight/runtime-iosarm64/1.5.3/9126996cd4ae91b34bf5bb909999e2b19b9925c5/runtime-iosarm64-1.5.3-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/com.squareup.sqldelight/runtime-iosarm64/1.5.3/9126996cd4ae91b34bf5bb909999e2b19b9925c5/runtime-iosarm64-1.5.3-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

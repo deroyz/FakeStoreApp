@@ -5,6 +5,7 @@ import kim.young.fakestoreapp.shared.domain.ProductDomainModel
 data class ProductsScreenState(
     val isLoading: Boolean = true,
     val products: List<ProductDomainModel> = emptyList(),
+    val product: ProductDomainModel = ProductDomainModel(),
     val error: Error = Error(),
     val isSuccess: Boolean = false,
 )

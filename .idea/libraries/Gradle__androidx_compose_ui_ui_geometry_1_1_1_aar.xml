@@ -1,13 +1,14 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.compose.ui:ui-geometry:1.1.1@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/837700a5f24e0bb574279745978c8b09/transformed/ui-geometry-1.1.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/837700a5f24e0bb574279745978c8b09/transformed/ui-geometry-1.1.1/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/837700a5f24e0bb574279745978c8b09/transformed/ui-geometry-1.1.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Program Files/caches/transforms-3/bb18871abb4bbebffba549e32e5db106/transformed/ui-geometry-1.1.1/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/transforms-3/bb18871abb4bbebffba549e32e5db106/transformed/ui-geometry-1.1.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Program Files/caches/transforms-3/bb18871abb4bbebffba549e32e5db106/transformed/ui-geometry-1.1.1/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.compose.ui/ui-geometry/1.1.1/62cddbba1976f50b4fa1b8668294631a1ee0f568/ui-geometry-1.1.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/androidx.compose.ui/ui-geometry/1.1.1/62cddbba1976f50b4fa1b8668294631a1ee0f568/ui-geometry-1.1.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
