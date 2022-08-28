@@ -10,7 +10,6 @@
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.activity/activity/1.5.1/55c391fc0c910cc005c57b1767624a033fd0f013/activity-1.5.1-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/androidx.activity/activity/1.5.1/55c391fc0c910cc005c57b1767624a033fd0f013/activity-1.5.1-sources.jar!/" />
     </SOURCES>
   </library>

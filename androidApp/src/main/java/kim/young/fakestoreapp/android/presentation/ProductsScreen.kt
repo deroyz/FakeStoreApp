@@ -1,17 +1,17 @@
 package kim.young.fakestoreapp.android.presentation
 
 import android.util.Log
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.text.KeyboardActions
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Text
-import androidx.compose.material.TopAppBar
+import androidx.compose.material.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -19,9 +19,11 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.focus.onFocusChanged
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalFocusManager
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -32,27 +34,30 @@ import androidx.navigation.NavController
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import coil.size.Scale
+import kim.young.fakestoreapp.android.R
 import kim.young.fakestoreapp.android.presentation.util.DestinationScreen
-import kim.young.fakestoreapp.android.presentation.util.NavParam
-import kim.young.fakestoreapp.android.presentation.util.navigateTo
+import kim.young.fakestoreapp.shared.data.remote.Category
 import kim.young.fakestoreapp.shared.domain.ProductDomainModel
-import kim.young.fakestoreapp.shared.presentation.products.ProductsScreenSideEffects
-import kim.young.fakestoreapp.shared.presentation.products.ProductViewModel
+import kim.young.fakestoreapp.shared.presentation.products.ProductsIntent
+import kim.young.fakestoreapp.shared.presentation.products.ProductsViewModel
+import kim.young.fakestoreapp.shared.presentation.products.ProductsScreenState
+import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.launch
 import org.koin.androidx.compose.inject
+import org.koin.androidx.compose.viewModel
 
 @Composable
-fun ProductsScreen(navController: NavController) {
+fun ProductsScreen(viewModel: ProductsViewModel, navController: NavController) {
 
-    val productViewModel: ProductViewModel by inject()
+    val state by viewModel.state.collectAsState()
 
     Log.e("ProductScreen", "Reached")
 
-    LaunchedEffect(key1 = 1) {
+    LaunchedEffect(true) {
         Log.e("ProductScreen", "LaunchedEffect")
-        productViewModel.onIntent(ProductsScreenSideEffects.GetAllProducts)
+        viewModel.handleIntent()
+        viewModel.userIntent.send(ProductsIntent.GetProductList)
     }
-
-    val state by productViewModel.state.collectAsState()
 
     Column(
         modifier = Modifier
@@ -64,14 +69,83 @@ fun ProductsScreen(navController: NavController) {
             Text(text = "Fake Store App", fontSize = 24.sp, textAlign = TextAlign.Center)
         }
 
-        Row {
+        Row(
+            modifier = Modifier
+                .padding(5.dp)
+                .fillMaxWidth()
+                .size(50.dp),
+            horizontalArrangement = Arrangement.SpaceBetween
+        ) {
+            val openDialog = remember { mutableStateOf(false) }
+            val coroutineScope = rememberCoroutineScope()
+
             SearchBar(
-                hint = "Search...",
                 modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(16.dp)
+                    .fillMaxWidth(0.9f)
+                    .align(Alignment.CenterVertically)
+                    .padding(start = 10.dp, end = 10.dp),
+                viewModel = viewModel,
+                hint = "Search by name..."
             ) {
-//                viewModel.onIntent((it))
+                viewModel.updateSearchName(it)
+                coroutineScope.launch {
+                    viewModel.userIntent.send(ProductsIntent.SearchProductListByName)
+                }
+            }
+
+            Box(
+                modifier = Modifier
+                    .align(Alignment.CenterVertically)
+                    .clickable {
+                        openDialog.value = true
+                        coroutineScope.launch {
+                            viewModel.userIntent.send(ProductsIntent.GetFilterList)
+                        }
+                    }
+            )
+            {
+
+                Image(
+                    painter = painterResource(id = R.drawable.ic_baseline_filter_list_24),
+                    contentDescription = null,
+                    modifier = Modifier.size(50.dp),
+                    colorFilter = ColorFilter.tint(Color.White)
+                )
+
+                if (openDialog.value) {
+
+                    AlertDialog(
+                        modifier = Modifier
+                            .height(300.dp),
+                        onDismissRequest = { openDialog.value = false },
+                        title = { Text(text = "Filter Products") },
+                        text = {
+                            LazyColumn(
+
+                                modifier = Modifier
+                                    .fillMaxWidth(),
+                            ) {
+                                val filterList = state.filterList
+//                                val newFilterList = remember { mutableListOf<String>() }
+                                items(filterList) { filter ->
+                                    SingleFilterRow(filter = filter, state = state) {
+
+//                                        viewModel.updateFilter(it)
+                                    }
+                                }
+                            }
+                        },
+                        confirmButton = {
+                            Box(modifier = Modifier
+                                .padding(10.dp)
+                                .clickable {
+                                    openDialog.value = false
+                                }) {
+                                Text("Close")
+                            }
+                        },
+                    )
+                }
             }
         }
 
@@ -80,13 +154,15 @@ fun ProductsScreen(navController: NavController) {
                 Error(state)
             }
             state.isSuccess -> {
-
                 LazyColumn(
                     contentPadding = PaddingValues(6.dp),
                     verticalArrangement = Arrangement.spacedBy(6.dp),
                     horizontalAlignment = Alignment.CenterHorizontally,
                 ) {
-                    val products = state.products
+                    val products = state.presentProductList
+
+                    Log.e("Products Screen", "LazyColumn Item List${products.toString()}")
+
                     val isProductsEven = products.size % 2 == 0
                     val rowCount =
                         if (isProductsEven) {
@@ -111,13 +187,41 @@ fun ProductsScreen(navController: NavController) {
 }
 
 @Composable
+fun SingleFilterRow(
+    filter: String,
+    state: ProductsScreenState,
+    filterChecked: (String) -> Unit
+) {
+    Row(
+        horizontalArrangement = Arrangement.SpaceBetween,
+        verticalAlignment = Alignment.CenterVertically,
+        modifier = Modifier
+            .height(30.dp)
+            .fillMaxWidth()
+            .padding(5.dp)
+    ) {
+        val filterState = remember { mutableStateOf(state.filterList.contains(filter)) }
+        Text(text = filter)
+        Checkbox(
+            checked = filterState.value,
+            onCheckedChange = {
+                filterState.value = it
+                filterChecked(filter)
+            }
+        )
+    }
+}
+
+
+@Composable
 fun SearchBar(
     modifier: Modifier = Modifier,
     hint: String = "",
+    viewModel: ProductsViewModel,
     onSearch: (String) -> Unit = {},
 ) {
     val focusManager = LocalFocusManager.current
-    var text by remember { mutableStateOf("") }
+    var text by remember { mutableStateOf(viewModel.state.value.searchProductName) }
     var isHintDisplayed by remember { mutableStateOf(hint != "") }
 
     Box(modifier = modifier) {
@@ -127,9 +231,10 @@ fun SearchBar(
                 text = it
                 onSearch(it)
             },
-            keyboardActions = KeyboardActions(onPrevious = {
-                focusManager.clearFocus()
-            }),
+            keyboardActions = KeyboardActions(
+                onPrevious = { focusManager.clearFocus() },
+
+                ),
             maxLines = 1,
             singleLine = true,
             textStyle = TextStyle(color = Color.Black),
@@ -143,6 +248,7 @@ fun SearchBar(
                     isHintDisplayed = !(it.hasFocus || text.isNotEmpty())
                 }
         )
+
         if (isHintDisplayed) {
             Text(
                 text = hint,
@@ -197,11 +303,7 @@ fun ProductEntry(
             .clip(RoundedCornerShape(10.dp))
             .height(315.dp)
             .clickable {
-                navigateTo(
-                    navController,
-                    DestinationScreen.Detail,
-                    NavParam("product", item)
-                )
+                navController.navigate(DestinationScreen.Detail.createRoute(item.id))
             }
             .background(Color.White)
     ) {

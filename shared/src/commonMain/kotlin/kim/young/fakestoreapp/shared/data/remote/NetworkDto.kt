@@ -26,6 +26,32 @@ data class Rating(
     val count: Int
 )
 
+@Serializable
+enum class Category(val value: String) {
+    Electronics("electronics"),
+    Jewelery("jewelery"),
+    MenSClothing("men's clothing"),
+    WomenSClothing("women's clothing");
+
+    companion object {
+        fun fromValue(value: String): Category = when (value) {
+            "electronics"      -> Electronics
+            "jewelery"         -> Jewelery
+            "men's clothing"   -> MenSClothing
+            "women's clothing" -> WomenSClothing
+            else               -> throw IllegalArgumentException()
+        }
+    }
+}
+
+// Mapping function (List<Network> -> List<Domain>)
+fun List<ProductNetworkModel>.asDomainModel(): List<ProductDomainModel> {
+    return map {
+        it.asDomainModel()
+    }
+}
+
+// Mapping function (Network -> Domain)
 fun ProductNetworkModel.asDomainModel(): ProductDomainModel {
     return ProductDomainModel(
         id = id,
@@ -40,12 +66,14 @@ fun ProductNetworkModel.asDomainModel(): ProductDomainModel {
 
 }
 
-fun List<ProductNetworkModel>.asDomainModel(): List<ProductDomainModel> {
+// Mapping function (List<Network> -> List<Database>)
+fun List<ProductNetworkModel>.asDatabaseModel(): List<ProductDatabaseModel> {
     return map {
-        it.asDomainModel()
+        it.asDatabaseModel()
     }
 }
 
+// Mapping function (Network -> Database)
 fun ProductNetworkModel.asDatabaseModel(): ProductDatabaseModel {
     return ProductDatabaseModel().apply {
         id = this@asDatabaseModel.id
@@ -60,8 +88,3 @@ fun ProductNetworkModel.asDatabaseModel(): ProductDatabaseModel {
 }
 
 
-fun List<ProductNetworkModel>.asDatabaseModel(): List<ProductDatabaseModel> {
-    return map {
-        it.asDatabaseModel()
-    }
-}

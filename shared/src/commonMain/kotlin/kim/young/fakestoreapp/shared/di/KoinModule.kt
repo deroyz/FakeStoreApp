@@ -9,17 +9,12 @@ import kim.young.fakestoreapp.shared.data.remote.ApiServiceImpl
 import kim.young.fakestoreapp.shared.data.repository.AbstractRepository
 import kim.young.fakestoreapp.shared.data.repository.RepositoryImpl
 import kim.young.fakestoreapp.shared.domain.usecase.GetProductListUseCase
-import kim.young.fakestoreapp.shared.domain.usecase.GetProductByIdUseCase
 import kim.young.fakestoreapp.shared.util.ResponseHandler
 import kim.young.fakestoreapp.shared.platformModule
 import io.ktor.client.*
 import io.ktor.client.engine.*
-import io.ktor.client.plugins.*
 import io.ktor.client.plugins.contentnegotiation.*
 import io.ktor.client.plugins.logging.*
-import io.ktor.client.request.*
-import io.ktor.client.statement.*
-import io.ktor.http.*
 import io.ktor.serialization.kotlinx.json.*
 import io.realm.kotlin.Realm
 import io.realm.kotlin.RealmConfiguration
@@ -48,7 +43,9 @@ fun initKoin(
 // called by iOS etc
 fun initKoin(baseUrl: String) = initKoin(enableNetworkLogs = true, baseUrl) {}
 
+
 fun getRepositoryModule(enableNetworkLogs: Boolean, baseUrl: String) = module {
+
     // Http Client
     single {
         createHttpClient(
@@ -63,7 +60,7 @@ fun getRepositoryModule(enableNetworkLogs: Boolean, baseUrl: String) = module {
     // Realm Module
     single { createRealmDatabase() }
 
-    // Data Structure Module
+    // Data Structure Module (Realm + Ktor + Repository)
     single<AbstractRealmService> {
         RealmServiceImpl(get())
     }
@@ -75,22 +72,24 @@ fun getRepositoryModule(enableNetworkLogs: Boolean, baseUrl: String) = module {
     }
 }
 
-
+// UseCase Module
 val useCaseModule = module {
     single { GetProductListUseCase(get()) }
-    single { GetProductByIdUseCase(get()) }
 }
 
+// ResponseHandle Module
 val helperModule = module {
     single { ResponseHandler() }
 }
 
+// Build function for Realm
 fun createRealmDatabase(): Realm {
     val configuration =
         RealmConfiguration.Builder(schema = setOf(ProductDatabaseModel::class)).build()
     return Realm.open(configuration)
 }
 
+// Build functions for Ktor
 fun createJson() = Json {
     isLenient = true
     ignoreUnknownKeys = true

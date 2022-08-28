@@ -1,0 +1,22 @@
+package kim.young.fakestoreapp.shared.presentation.products
+
+import kim.young.fakestoreapp.shared.data.remote.Category
+import kim.young.fakestoreapp.shared.domain.ProductDomainModel
+
+data class ProductsScreenState(
+
+    val filterList: List<String> = emptyList(),
+
+    val searchProductName: String = "",
+    val detailProductId: Int = -1,
+
+    val detailProduct: ProductDomainModel = ProductDomainModel(),
+    val allProductList: List<ProductDomainModel> = emptyList(),
+    val presentProductList: List<ProductDomainModel> = emptyList(),
+
+    val isLoading: Boolean = true,
+    val isSuccess: Boolean = false,
+    val error: Error = Error()
+)
+
+data class Error(val isError: Boolean = false, val errorMessage: String = "Something went wrong.")

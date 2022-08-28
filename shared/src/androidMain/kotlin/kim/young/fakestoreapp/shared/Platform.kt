@@ -1,7 +1,7 @@
 package kim.young.fakestoreapp.shared
 
 import io.ktor.client.engine.android.*
-import kim.young.fakestoreapp.shared.presentation.products.ProductViewModel
+import kim.young.fakestoreapp.shared.presentation.products.ProductsViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
@@ -11,7 +11,7 @@ actual fun platformModule() = module {
     }
 
     viewModel{
-        ProductViewModel(get(), get())
+        ProductsViewModel(get())
     }
 }
 

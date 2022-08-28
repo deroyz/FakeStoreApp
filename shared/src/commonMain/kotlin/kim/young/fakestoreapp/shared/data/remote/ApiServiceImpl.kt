@@ -16,6 +16,7 @@ class ApiServiceImpl(
     private val baseUrl: String
 ) : AbstractApiService() {
 
+    // Api call with exception handling
     override suspend fun getProductListFromApi(): DataState<List<ProductNetworkModel>> {
         return try {
             DataState.Success(httpClient.get(baseUrl).body())
