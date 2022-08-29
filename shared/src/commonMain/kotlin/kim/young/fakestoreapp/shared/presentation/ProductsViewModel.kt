@@ -1,6 +1,7 @@
 package kim.young.fakestoreapp.shared.presentation
 
 import dev.icerock.moko.mvvm.viewmodel.ViewModel
+import kim.young.fakestoreapp.shared.domain.usecase.ClearProductListUseCase
 import kim.young.fakestoreapp.shared.domain.usecase.GetProductListUseCase
 import kim.young.fakestoreapp.shared.util.DataState
 import kotlinx.coroutines.channels.Channel
@@ -9,6 +10,7 @@ import kotlinx.coroutines.launch
 
 class ProductsViewModel(
     private val getProductListUseCase: GetProductListUseCase,
+    private val clearProductListUseCase: ClearProductListUseCase
 ) : ViewModel() {
 
     var state = MutableStateFlow(ProductsState())
@@ -23,9 +25,15 @@ class ProductsViewModel(
                     is ProductsIntent.SearchProductListByName -> searchByName()
                     is ProductsIntent.GetFilterList -> getFilterList()
                     is ProductsIntent.ApplyNewFilter -> applyNewFilter()
-                    else->{}
+                    is ProductsIntent.RefreshProductList -> refreshProductList()
                 }
             }
+        }
+    }
+
+    private fun refreshProductList() {
+        viewModelScope.launch {
+            clearProductListUseCase.invoke()
         }
     }
 
@@ -34,10 +42,10 @@ class ProductsViewModel(
 
         val currentFilterList = state.value.presentFilterList
         val isFilterUpdated = currentFilterList.contains(filter)
-        state.value.copy(
-            isLoading = true,
-            isSuccess = false
-        )
+//        state.value.copy(
+//            isLoading = true,
+//            isSuccess = false
+//        )
 
         viewModelScope.launch {
             if (isFilterUpdated) {
@@ -63,10 +71,10 @@ class ProductsViewModel(
         println("===============================================> Called getProductList")
 
         viewModelScope.launch {
-            state.value.copy(
-                isLoading = true,
-                isSuccess = false
-            )
+//            state.value.copy(
+//                isLoading = true,
+//                isSuccess = false
+//            )
             if (state.value.presentProductList.isEmpty()) {
                 println("===============================================> Called getProductList, presentProductList Empty")
 
@@ -131,12 +139,11 @@ class ProductsViewModel(
 
     private fun searchByName() {
         println("===============================================> Called SearchByName ")
-
         val name = state.value.searchProductName
-        state.value.copy(
-            isLoading = true,
-            isSuccess = false
-        )
+//        state.value.copy(
+//            isLoading = true,
+//            isSuccess = false
+//        )
         viewModelScope.launch {
             val allProductList = state.value.allProductList
             val presentProductList = allProductList.asFlow().filter {
@@ -168,11 +175,10 @@ class ProductsViewModel(
 
     fun getDetailProduct() {
         println("===============================================> Called getDetailProduct")
-
-        state.value.copy(
-            isLoading = true,
-            isSuccess = false
-        )
+//        state.value.copy(
+//            isLoading = true,
+//            isSuccess = false
+//        )
 
         val detailProductId = state.value.detailProductId
 
@@ -191,11 +197,10 @@ class ProductsViewModel(
 
     private fun getFilterList() {
         println("===============================================> Called getCurrentFilterList")
-
-        state.value.copy(
-            isLoading = true,
-            isSuccess = false,
-        )
+//        state.value.copy(
+//            isLoading = true,
+//            isSuccess = false,
+//        )
 
         val allProductList = state.value.allProductList
         val presentProductList = state.value.presentProductList
@@ -233,16 +238,15 @@ class ProductsViewModel(
         println("===============================================> Called applyNewFilter ")
 
         val checkedFilter = state.value.presentFilterList
-        state.value.copy(
-            isLoading = true,
-            isSuccess = false
-        )
+//        state.value.copy(
+//            isLoading = true,
+//            isSuccess = false
+//        )
         viewModelScope.launch {
             val presentProductList = state.value.presentProductList
             val filteredProductList = presentProductList.filter { product ->
                 checkedFilter.contains(product.category)
             }
-
             state.emit(
                 state.value.copy(
                     isLoading = false,
@@ -250,6 +254,17 @@ class ProductsViewModel(
                     presentProductList = filteredProductList
                 )
             )
+        }
+    }
+
+    fun onClickRefresh() {
+        viewModelScope.launch {
+            userIntent.send(ProductsIntent.RefreshProductList)
+            state.emit(ProductsState())
+            println("===============================================> Called onClickRefresh List: ${state.value.presentFilterList}")
+            println("===============================================> Called onClickRefresh List: ${state.value.allProductList}")
+
+            userIntent.send(ProductsIntent.GetProductList)
         }
     }
 

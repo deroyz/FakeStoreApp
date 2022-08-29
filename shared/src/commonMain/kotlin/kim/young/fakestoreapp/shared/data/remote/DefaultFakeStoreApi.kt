@@ -4,17 +4,16 @@ import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.plugins.*
 import io.ktor.client.request.*
-import io.ktor.http.*
 import kim.young.fakestoreapp.shared.util.DataState
 
-abstract class AbstractApiService {
-    abstract suspend fun getProductListFromApi(): DataState<List<ProductNetworkModel>>
+interface FakeStoreApi {
+    suspend fun getProductListFromApi(): DataState<List<ProductNetworkModel>>
 }
 
-class ApiServiceImpl(
+class DefaultFakeStoreApi(
     private val httpClient: HttpClient,
     private val baseUrl: String
-) : AbstractApiService() {
+) : FakeStoreApi {
 
     // Api call with exception handling
     override suspend fun getProductListFromApi(): DataState<List<ProductNetworkModel>> {

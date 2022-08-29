@@ -59,9 +59,28 @@ fun ProductsScreen(viewModel: ProductsViewModel, navController: NavController) {
             .fillMaxSize()
             .background(Color.LightGray)
     ) {
-
         TopAppBar {
-            Text(text = "Fake Store App", fontSize = 24.sp, textAlign = TextAlign.Center)
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .align(Alignment.CenterVertically)
+                    .padding(10.dp),
+                horizontalArrangement = Arrangement.SpaceBetween
+            ) {
+                val coroutineScope = rememberCoroutineScope()
+                Text(text = "Fake Store App", fontSize = 24.sp, textAlign = TextAlign.Center)
+                Text(
+                    text = "Refresh",
+                    textAlign = TextAlign.Center,
+                    modifier = Modifier
+                        .align(Alignment.CenterVertically)
+                        .clickable {
+//                            coroutineScope.launch {
+                                viewModel.onClickRefresh()
+//                            }
+                        }
+                )
+            }
         }
 
         Row(

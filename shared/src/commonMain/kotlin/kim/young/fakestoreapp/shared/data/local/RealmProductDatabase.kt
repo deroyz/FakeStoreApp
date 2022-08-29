@@ -4,26 +4,21 @@ import io.realm.kotlin.Realm
 import io.realm.kotlin.ext.query
 import io.realm.kotlin.notifications.ResultsChange
 import io.realm.kotlin.query.RealmResults
-import kim.young.fakestoreapp.shared.data.remote.ProductNetworkModel
-import kim.young.fakestoreapp.shared.domain.ProductDomainModel
-import kim.young.fakestoreapp.shared.util.DataState
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.async
 import kotlinx.coroutines.flow.Flow
 
-interface AbstractRealmService {
-    suspend fun insertProductList(products: List<ProductDatabaseModel>)
+interface ProductDatabase {
+    suspend fun clearAndInsertProductList(products: List<ProductDatabaseModel>)
+    suspend fun clearAllProductList()
 
     fun getProductList(): Flow<ResultsChange<ProductDatabaseModel>>
 
     fun getProductListObj(): RealmResults<ProductDatabaseModel>
 }
 
-class RealmServiceImpl(private val realm: Realm) : AbstractRealmService {
+class RealmProductDatabase(private val realm: Realm) : ProductDatabase {
 
     // Writing data into Realm database
-    override suspend fun insertProductList(products: List<ProductDatabaseModel>) {
+    override suspend fun clearAndInsertProductList(products: List<ProductDatabaseModel>) {
         realm.writeBlocking {
             val queries = query<ProductDatabaseModel>().find()
             delete(queries)
@@ -33,6 +28,13 @@ class RealmServiceImpl(private val realm: Realm) : AbstractRealmService {
                     product
                 )
             }
+        }
+    }
+
+    override suspend fun clearAllProductList() {
+        realm.writeBlocking {
+            val queries = query<ProductDatabaseModel>().find()
+            delete(queries)
         }
     }
 

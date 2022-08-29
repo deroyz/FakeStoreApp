@@ -11,7 +11,7 @@ actual fun platformModule() = module {
     }
 
     viewModel{
-        ProductsViewModel(get())
+        ProductsViewModel(get(), get())
     }
 }
 

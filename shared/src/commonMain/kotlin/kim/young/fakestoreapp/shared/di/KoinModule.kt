@@ -1,12 +1,12 @@
 package kim.young.fakestoreapp.shared.di
 
 
-import kim.young.fakestoreapp.shared.data.local.AbstractRealmService
+import kim.young.fakestoreapp.shared.data.local.ProductDatabase
 import kim.young.fakestoreapp.shared.data.local.ProductDatabaseModel
-import kim.young.fakestoreapp.shared.data.local.RealmServiceImpl
-import kim.young.fakestoreapp.shared.data.remote.AbstractApiService
-import kim.young.fakestoreapp.shared.data.remote.ApiServiceImpl
-import kim.young.fakestoreapp.shared.data.repository.AbstractRepository
+import kim.young.fakestoreapp.shared.data.local.RealmProductDatabase
+import kim.young.fakestoreapp.shared.data.remote.FakeStoreApi
+import kim.young.fakestoreapp.shared.data.remote.DefaultFakeStoreApi
+import kim.young.fakestoreapp.shared.data.repository.ProductRepository
 import kim.young.fakestoreapp.shared.data.repository.RepositoryImpl
 import kim.young.fakestoreapp.shared.domain.usecase.GetProductListUseCase
 import kim.young.fakestoreapp.shared.util.ResponseHandler
@@ -18,6 +18,7 @@ import io.ktor.client.plugins.logging.*
 import io.ktor.serialization.kotlinx.json.*
 import io.realm.kotlin.Realm
 import io.realm.kotlin.RealmConfiguration
+import kim.young.fakestoreapp.shared.domain.usecase.ClearProductListUseCase
 import kotlinx.serialization.json.Json
 import org.koin.core.context.startKoin
 import org.koin.dsl.KoinAppDeclaration
@@ -61,13 +62,13 @@ fun getRepositoryModule(enableNetworkLogs: Boolean, baseUrl: String) = module {
     single { createRealmDatabase() }
 
     // Data Structure Module (Realm + Ktor + Repository)
-    single<AbstractRealmService> {
-        RealmServiceImpl(get())
+    single<ProductDatabase> {
+        RealmProductDatabase(get())
     }
-    single<AbstractApiService> {
-        ApiServiceImpl(get(), baseUrl)
+    single<FakeStoreApi> {
+        DefaultFakeStoreApi(get(), baseUrl)
     }
-    single<AbstractRepository> {
+    single<ProductRepository> {
         RepositoryImpl(get(), get(), get())
     }
 }
@@ -75,6 +76,7 @@ fun getRepositoryModule(enableNetworkLogs: Boolean, baseUrl: String) = module {
 // UseCase Module
 val useCaseModule = module {
     single { GetProductListUseCase(get()) }
+    single { ClearProductListUseCase(get())}
 }
 
 // ResponseHandle Module
