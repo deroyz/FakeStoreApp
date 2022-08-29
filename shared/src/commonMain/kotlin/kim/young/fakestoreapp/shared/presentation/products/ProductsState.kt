@@ -3,9 +3,10 @@ package kim.young.fakestoreapp.shared.presentation.products
 import kim.young.fakestoreapp.shared.data.remote.Category
 import kim.young.fakestoreapp.shared.domain.ProductDomainModel
 
-data class ProductsScreenState(
+data class ProductsState(
 
-    val filterList: List<String> = emptyList(),
+    val allFilterList: List<String> = emptyList(),
+    val presentFilterList: List<String> = emptyList(),
 
     val searchProductName: String = "",
     val detailProductId: Int = -1,

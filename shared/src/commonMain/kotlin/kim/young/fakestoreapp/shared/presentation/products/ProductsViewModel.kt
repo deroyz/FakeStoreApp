@@ -1,7 +1,6 @@
 package kim.young.fakestoreapp.shared.presentation.products
 
 import dev.icerock.moko.mvvm.viewmodel.ViewModel
-import kim.young.fakestoreapp.shared.data.remote.Category
 import kim.young.fakestoreapp.shared.domain.usecase.GetProductListUseCase
 import kim.young.fakestoreapp.shared.util.DataState
 import kotlinx.coroutines.channels.Channel
@@ -12,14 +11,8 @@ class ProductsViewModel(
     private val getProductListUseCase: GetProductListUseCase,
 ) : ViewModel() {
 
-    var state = MutableStateFlow(ProductsScreenState())
+    var state = MutableStateFlow(ProductsState())
     val userIntent = Channel<ProductsIntent>(Channel.UNLIMITED)
-
-    init {
-        handleIntent()
-//        viewModelScope.launch {
-//        }
-    }
 
     fun handleIntent() {
         viewModelScope.launch {
@@ -29,93 +22,42 @@ class ProductsViewModel(
                     is ProductsIntent.GetDetailProduct -> getDetailProduct()
                     is ProductsIntent.GetFilterList -> getFilterList()
                     is ProductsIntent.SearchProductListByName -> searchByName()
-                    else -> {}
+                    is ProductsIntent.ApplyNewFilter -> applyNewFilter()
+                    is ProductsIntent.RefreshSearchWord -> refreshSearch()
                 }
             }
         }
     }
 
-    fun updateFilterList(filter: Category) {
+    fun updateFilterList(filter: String) {
+        println("===============================================> Called updateFilterList filter: $filter")
 
-//        val isFilterUpdated = state.value.filterList.contains(filter)
-//        val filter = state.value.filterList
-//
-//        viewModelScope.launch {
-//            if (isFilterUpdated) {
-//                state.emit(
-//                    state.value.copy(
-//                        filterList = state.value.filterList - filter,
-//                        isSuccess = false,
-//                    )
-//                )
-//            } else {
-//                state.emit(
-//                    state.value.copy(
-//                        filterList = state.value.filterList + filter,
-//                        isSuccess = false,
-//                    )
-//                )
-//            }
-//            println("===============>Updated Filter List${state.value.filterList}")
-//        }
-    }
-
-    fun updateDetailProductId(id: Int) {
-        println("===============================================> Called updateDetailProductId Id: $id")
-        viewModelScope.launch {
-            state.emit(
-                state.value.copy(
-                    isLoading = false,
-                    isSuccess = false,
-                    detailProductId = id
-                )
-            )
-        }
-    }
-
-    fun updateSearchName(name: String) {
-        println("===============================================> Called updateSearchName name: $name")
-        viewModelScope.launch {
-            state.emit(
-                state.value.copy(
-                    isLoading = false,
-                    isSuccess = false,
-                    searchProductName = name
-                )
-            )
-        }
-    }
-
-    fun getDetailProduct() {
-        println("===============================================> Called getDetailProduct")
+        val currentFilterList = state.value.presentFilterList
+        val isFilterUpdated = currentFilterList.contains(filter)
         state.value.copy(
             isLoading = true,
             isSuccess = false
         )
 
-        val detailProductId = state.value.detailProductId
-
         viewModelScope.launch {
-            val detailProduct =
-                state.value.allProductList.asFlow().filter { it.id == detailProductId }.last()
-            state.emit(
-                state.value.copy(
-                    isLoading = false,
-                    isSuccess = true,
-                    detailProduct = detailProduct
+            if (isFilterUpdated) {
+                state.emit(
+                    state.value.copy(
+                        isLoading = false,
+                        presentFilterList = state.value.presentFilterList - filter
+                    )
                 )
-            )
+            } else {
+                state.emit(
+                    state.value.copy(
+                        isLoading = false,
+                        presentFilterList = state.value.presentFilterList + filter
+                    )
+                )
+            }
         }
-        /*viewModelScope.launch {
-
-            state.emit(state.value.copy(
-                presentProductList = state.value.allProductList.filter {
-                    it.title?.contains(name, ignoreCase = true) == true
-                }
-            ))
-        }*/
+        println("===============================================> Called updateFilterList filter: ${state.value.presentFilterList}")
     }
-
 
     private fun getProductList() {
         println("===============================================> Called getProductList")
@@ -127,6 +69,7 @@ class ProductsViewModel(
             )
             if (state.value.presentProductList.isEmpty()) {
                 println("===============================================> Called getProductList, presentProductList Empty")
+
                 getProductListUseCase.invoke().collectLatest { dataState ->
                     when (dataState) {
                         is DataState.Success -> {
@@ -161,6 +104,7 @@ class ProductsViewModel(
                 }
             } else {
                 println("===============================================> Called getProductList, presentProductList Filled")
+
                 state.emit(
                     state.value.copy(
                         isLoading = false,
@@ -171,22 +115,15 @@ class ProductsViewModel(
         }
     }
 
-    private fun getFilterList() {
-        val presentProductList = state.value.presentProductList
-        val existingCategory: HashMap<String, String> = hashMapOf()
-
-        presentProductList.forEach {
-            val category = it.category.toString()
-            existingCategory[category] = category
-        }
-
-        val filterList: List<String> = ArrayList(existingCategory.values)
+    fun updateSearchName(name: String) {
+        println("===============================================> Called updateSearchName name: $name")
 
         viewModelScope.launch {
             state.emit(
                 state.value.copy(
+                    isLoading = false,
                     isSuccess = false,
-                    filterList = filterList
+                    searchProductName = name
                 )
             )
         }
@@ -194,8 +131,12 @@ class ProductsViewModel(
 
     private fun searchByName() {
         println("===============================================> Called SearchByName ")
+
         val name = state.value.searchProductName
-        state.value.copy(isLoading = true)
+        state.value.copy(
+            isLoading = true,
+            isSuccess = false
+        )
         viewModelScope.launch {
             val allProductList = state.value.allProductList
             val presentProductList = allProductList.asFlow().filter {
@@ -212,22 +153,125 @@ class ProductsViewModel(
         }
     }
 
-
-    private fun applyFilters() {
-
-//        val currentFilter = state.value.filterList
-//
-//
-//        viewModelScope.launch {
-//            f.emit(
-//                state.value.copy(
-//                    presentProductList = state.value.allProductList
-//                )
-//            )
-//        }
-
+    fun updateDetailProductId(id: Int) {
+        println("===============================================> Called updateDetailProductId Id: $id")
+        viewModelScope.launch {
+            state.emit(
+                state.value.copy(
+                    isLoading = false,
+                    isSuccess = false,
+                    detailProductId = id
+                )
+            )
+        }
     }
 
+    fun getDetailProduct() {
+        println("===============================================> Called getDetailProduct")
+
+        state.value.copy(
+            isLoading = true,
+            isSuccess = false
+        )
+
+        val detailProductId = state.value.detailProductId
+
+        viewModelScope.launch {
+            val detailProduct =
+                state.value.allProductList.asFlow().filter { it.id == detailProductId }.last()
+            state.emit(
+                state.value.copy(
+                    isLoading = false,
+                    isSuccess = true,
+                    detailProduct = detailProduct
+                )
+            )
+        }
+        /*viewModelScope.launch {
+
+            state.emit(state.value.copy(
+                presentProductList = state.value.allProductList.filter {
+                    it.title?.contains(name, ignoreCase = true) == true
+                }
+            ))
+        }*/
+    }
+
+    private fun refreshSearch() {
+        viewModelScope.launch {
+            state.emit(
+                state.value.copy(
+                    isLoading = true,
+                    isSuccess = false,
+                    searchProductName = ""
+                )
+            )
+        }
+    }
+
+    private fun getFilterList() {
+        println("===============================================> Called getCurrentFilterList")
+
+        state.value.copy(
+            isLoading = true,
+            isSuccess = false,
+        )
+
+        val allProductList = state.value.allProductList
+        val presentProductList = state.value.presentProductList
+
+        val allFilters: HashMap<String, String> = hashMapOf()
+        val presentFilters: HashMap<String, String> = hashMapOf()
+
+        allProductList.forEach {
+            val category = it.category.toString()
+            allFilters[category] = category
+        }
+
+        presentProductList.forEach {
+            val category = it.category.toString()
+            presentFilters[category] = category
+        }
+
+        val allFilterList: List<String> = ArrayList(allFilters.values)
+        val presentFilterList: List<String> = ArrayList(presentFilters.values)
+
+        viewModelScope.launch {
+            state.emit(
+                state.value.copy(
+                    isSuccess = true,
+                    presentFilterList = presentFilterList,
+                    allFilterList = allFilterList
+                )
+            )
+        }
+        println("===============================================> Called getCurrentFilterList -> AllFilters: $allFilterList")
+        println("===============================================> Called getCurrentFilterList -> CheckedFilters: $presentFilterList")
+    }
+
+    private fun applyNewFilter() {
+        println("===============================================> Called applyNewFilter ")
+
+        val checkedFilter = state.value.presentFilterList
+        state.value.copy(
+            isLoading = true,
+            isSuccess = false
+        )
+        viewModelScope.launch {
+            val allProductList = state.value.allProductList
+            val presentProductList = allProductList.asFlow().filter { product ->
+                checkedFilter.contains(product.category)
+            }.toList()
+
+            state.emit(
+                state.value.copy(
+                    isLoading = false,
+                    isSuccess = true,
+                    presentProductList = presentProductList
+                )
+            )
+        }
+    }
 
 }
 

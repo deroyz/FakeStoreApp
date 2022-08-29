@@ -36,15 +36,11 @@ import coil.request.ImageRequest
 import coil.size.Scale
 import kim.young.fakestoreapp.android.R
 import kim.young.fakestoreapp.android.presentation.util.DestinationScreen
-import kim.young.fakestoreapp.shared.data.remote.Category
 import kim.young.fakestoreapp.shared.domain.ProductDomainModel
 import kim.young.fakestoreapp.shared.presentation.products.ProductsIntent
 import kim.young.fakestoreapp.shared.presentation.products.ProductsViewModel
-import kim.young.fakestoreapp.shared.presentation.products.ProductsScreenState
-import kotlinx.coroutines.coroutineScope
+import kim.young.fakestoreapp.shared.presentation.products.ProductsState
 import kotlinx.coroutines.launch
-import org.koin.androidx.compose.inject
-import org.koin.androidx.compose.viewModel
 
 @Composable
 fun ProductsScreen(viewModel: ProductsViewModel, navController: NavController) {
@@ -92,63 +88,68 @@ fun ProductsScreen(viewModel: ProductsViewModel, navController: NavController) {
                     viewModel.userIntent.send(ProductsIntent.SearchProductListByName)
                 }
             }
-
             Box(
                 modifier = Modifier
                     .align(Alignment.CenterVertically)
                     .clickable {
                         openDialog.value = true
                         coroutineScope.launch {
+                            if(state.searchProductName.isNotBlank()){
+                                viewModel.userIntent.send(ProductsIntent.RefreshSearchWord)
+                            }
                             viewModel.userIntent.send(ProductsIntent.GetFilterList)
                         }
                     }
-            )
-            {
-
+            ) {
                 Image(
                     painter = painterResource(id = R.drawable.ic_baseline_filter_list_24),
                     contentDescription = null,
                     modifier = Modifier.size(50.dp),
                     colorFilter = ColorFilter.tint(Color.White)
                 )
-
                 if (openDialog.value) {
-
                     AlertDialog(
                         modifier = Modifier
                             .height(300.dp),
                         onDismissRequest = { openDialog.value = false },
-                        title = { Text(text = "Filter Products") },
+                        title = { Text(text = "Filter Products", fontWeight = FontWeight.Bold) },
                         text = {
-                            LazyColumn(
+                            Column(
 
                                 modifier = Modifier
-                                    .fillMaxWidth(),
+                                    .fillMaxWidth()
+                                    .fillMaxHeight(0.7f)
                             ) {
-                                val filterList = state.filterList
-//                                val newFilterList = remember { mutableListOf<String>() }
-                                items(filterList) { filter ->
-                                    SingleFilterRow(filter = filter, state = state) {
-
-//                                        viewModel.updateFilter(it)
+                                LazyColumn(
+                                    modifier = Modifier
+                                        .fillMaxSize(),
+                                ) {
+                                    val allFilterList = state.allFilterList
+                                    items(allFilterList) { filter ->
+                                        SingleFilterRow(filter = filter, state = state) { filter ->
+                                            viewModel.updateFilterList(filter)
+                                        }
                                     }
                                 }
                             }
                         },
                         confirmButton = {
                             Box(modifier = Modifier
+                                .align(Alignment.BottomEnd)
                                 .padding(10.dp)
                                 .clickable {
+                                    coroutineScope.launch {
+                                        viewModel.userIntent.send(ProductsIntent.ApplyNewFilter)
+                                    }
                                     openDialog.value = false
                                 }) {
-                                Text("Close")
+                                Text("Ok")
                             }
                         },
                     )
                 }
             }
         }
-
         when {
             state.error.isError -> {
                 Error(state)
@@ -161,7 +162,7 @@ fun ProductsScreen(viewModel: ProductsViewModel, navController: NavController) {
                 ) {
                     val products = state.presentProductList
 
-                    Log.e("Products Screen", "LazyColumn Item List${products.toString()}")
+                    Log.e("Products Screen", "LazyColumn Item List${products}")
 
                     val isProductsEven = products.size % 2 == 0
                     val rowCount =
@@ -189,7 +190,7 @@ fun ProductsScreen(viewModel: ProductsViewModel, navController: NavController) {
 @Composable
 fun SingleFilterRow(
     filter: String,
-    state: ProductsScreenState,
+    state: ProductsState,
     filterChecked: (String) -> Unit
 ) {
     Row(
@@ -200,7 +201,7 @@ fun SingleFilterRow(
             .fillMaxWidth()
             .padding(5.dp)
     ) {
-        val filterState = remember { mutableStateOf(state.filterList.contains(filter)) }
+        val filterState = remember { mutableStateOf(state.presentFilterList.contains(filter))}
         Text(text = filter)
         Checkbox(
             checked = filterState.value,
@@ -211,7 +212,6 @@ fun SingleFilterRow(
         )
     }
 }
-
 
 @Composable
 fun SearchBar(
@@ -233,12 +233,10 @@ fun SearchBar(
             },
             keyboardActions = KeyboardActions(
                 onPrevious = { focusManager.clearFocus() },
-
-                ),
+            ),
             maxLines = 1,
             singleLine = true,
             textStyle = TextStyle(color = Color.Black),
-
             modifier = Modifier
                 .fillMaxWidth()
                 .shadow(5.dp, CircleShape)
@@ -248,7 +246,6 @@ fun SearchBar(
                     isHintDisplayed = !(it.hasFocus || text.isNotEmpty())
                 }
         )
-
         if (isHintDisplayed) {
             Text(
                 text = hint,
@@ -295,7 +292,6 @@ fun ProductEntry(
     navController: NavController,
     modifier: Modifier = Modifier,
 ) {
-
     Box(
         contentAlignment = Alignment.Center,
         modifier = modifier
@@ -309,9 +305,7 @@ fun ProductEntry(
     ) {
         Column(
             modifier = Modifier.fillMaxSize(),
-
-            ) {
-
+        ) {
             AsyncImage(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -329,7 +323,6 @@ fun ProductEntry(
                 contentDescription = item.title,
                 contentScale = ContentScale.FillBounds
             )
-
             item.title?.let {
                 Text(
                     text = it,
@@ -341,7 +334,6 @@ fun ProductEntry(
                     maxLines = 2
                 )
             }
-
             item.price?.let {
                 Text(
                     text = "$${item.price.toString()}",
@@ -351,7 +343,6 @@ fun ProductEntry(
                     maxLines = 4
                 )
             }
-
             item.description?.let {
                 Text(
                     text = it,

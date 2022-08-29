@@ -47,7 +47,6 @@ fun DetailScreen(viewModel: ProductsViewModel, navController: NavController, pro
 
     val state by viewModel.state.collectAsState()
 
-
     Column(
         modifier = Modifier
             .fillMaxSize()

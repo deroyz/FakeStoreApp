@@ -9,7 +9,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import kim.young.fakestoreapp.shared.presentation.products.ProductsScreenState
+import kim.young.fakestoreapp.shared.presentation.products.ProductsState
 
 @Composable
 fun Empty(
@@ -44,7 +44,7 @@ fun Empty(
 
 @Composable
 fun Error(
-  state: ProductsScreenState
+  state: ProductsState
 ) {
     Column(
         modifier = Modifier.fillMaxSize(),

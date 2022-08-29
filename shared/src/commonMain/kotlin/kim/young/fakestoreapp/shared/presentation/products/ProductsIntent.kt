@@ -1,16 +1,17 @@
 package kim.young.fakestoreapp.shared.presentation.products
 
 sealed class ProductsIntent {
-    // For products screen entry
+    // Products screen entry
     object GetProductList : ProductsIntent()
 
-    // For search by name feature
+    // Search by name
     object SearchProductListByName : ProductsIntent()
+    object RefreshSearchWord: ProductsIntent()
 
-    // For detail screen entry
+    // Detail screen entry
     object GetDetailProduct : ProductsIntent()
 
-    // For filter feature
+    // Filter feature
     object GetFilterList : ProductsIntent()
-    object ApplyFilter : ProductsIntent()
+    object ApplyNewFilter : ProductsIntent()
 }
