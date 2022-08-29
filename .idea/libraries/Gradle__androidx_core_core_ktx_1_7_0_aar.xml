@@ -10,7 +10,6 @@
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.core/core-ktx/1.7.0/8ab417a25ecc45ec8996edeef98f1b77b4690dd8/core-ktx-1.7.0-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/androidx.core/core-ktx/1.7.0/8ab417a25ecc45ec8996edeef98f1b77b4690dd8/core-ktx-1.7.0-sources.jar!/" />
     </SOURCES>
   </library>

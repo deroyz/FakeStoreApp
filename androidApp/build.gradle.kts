@@ -49,7 +49,4 @@ dependencies {
     implementation(Libraries.Compose.coil)
     implementation(Libraries.Compose.activity)
     implementation(Libraries.Compose.navigation)
-
-//    implementation(Libraries.composeDestinationPlugin)
-
 }

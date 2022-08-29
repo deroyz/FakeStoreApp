@@ -7,7 +7,6 @@
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.compose.ui/ui-geometry/1.1.1/62cddbba1976f50b4fa1b8668294631a1ee0f568/ui-geometry-1.1.1-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../Program Files/caches/modules-2/files-2.1/androidx.compose.ui/ui-geometry/1.1.1/62cddbba1976f50b4fa1b8668294631a1ee0f568/ui-geometry-1.1.1-sources.jar!/" />
     </SOURCES>
   </library>

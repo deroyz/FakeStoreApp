@@ -75,9 +75,7 @@ fun ProductsScreen(viewModel: ProductsViewModel, navController: NavController) {
                     modifier = Modifier
                         .align(Alignment.CenterVertically)
                         .clickable {
-//                            coroutineScope.launch {
                                 viewModel.onClickRefresh()
-//                            }
                         }
                 )
             }

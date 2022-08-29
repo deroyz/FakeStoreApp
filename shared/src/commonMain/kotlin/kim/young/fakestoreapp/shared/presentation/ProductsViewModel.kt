@@ -10,7 +10,7 @@ import kotlinx.coroutines.launch
 
 class ProductsViewModel(
     private val getProductListUseCase: GetProductListUseCase,
-    private val clearProductListUseCase: ClearProductListUseCase
+    private val clearProductListDatabaseUseCase: ClearProductListUseCase
 ) : ViewModel() {
 
     var state = MutableStateFlow(ProductsState())
@@ -25,15 +25,15 @@ class ProductsViewModel(
                     is ProductsIntent.SearchProductListByName -> searchByName()
                     is ProductsIntent.GetFilterList -> getFilterList()
                     is ProductsIntent.ApplyNewFilter -> applyNewFilter()
-                    is ProductsIntent.RefreshProductList -> refreshProductList()
+                    is ProductsIntent.ClearProductListDatabase -> clearProductListDatabase()
                 }
             }
         }
     }
 
-    private fun refreshProductList() {
+    private fun clearProductListDatabase() {
         viewModelScope.launch {
-            clearProductListUseCase.invoke()
+            clearProductListDatabaseUseCase.invoke()
         }
     }
 
@@ -223,11 +223,10 @@ class ProductsViewModel(
 
     fun onClickRefresh() {
         viewModelScope.launch {
-            userIntent.send(ProductsIntent.RefreshProductList)
+            userIntent.send(ProductsIntent.ClearProductListDatabase)
             state.emit(ProductsState())
             println("===============================================> Called onClickRefresh List: ${state.value.presentFilterList}")
             println("===============================================> Called onClickRefresh List: ${state.value.allProductList}")
-
             userIntent.send(ProductsIntent.GetProductList)
         }
     }
