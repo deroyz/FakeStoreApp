@@ -23,7 +23,7 @@ class ProductsViewModel(
                     is ProductsIntent.GetFilterList -> getFilterList()
                     is ProductsIntent.SearchProductListByName -> searchByName()
                     is ProductsIntent.ApplyNewFilter -> applyNewFilter()
-                    is ProductsIntent.RefreshSearchWord -> refreshSearch()
+                    else->{}
                 }
             }
         }
@@ -258,8 +258,8 @@ class ProductsViewModel(
             isSuccess = false
         )
         viewModelScope.launch {
-            val allProductList = state.value.allProductList
-            val presentProductList = allProductList.asFlow().filter { product ->
+            val presentProductList = state.value.presentProductList
+            val filteredProductList = presentProductList.asFlow().filter { product ->
                 checkedFilter.contains(product.category)
             }.toList()
 
@@ -267,7 +267,7 @@ class ProductsViewModel(
                 state.value.copy(
                     isLoading = false,
                     isSuccess = true,
-                    presentProductList = presentProductList
+                    presentProductList = filteredProductList
                 )
             )
         }

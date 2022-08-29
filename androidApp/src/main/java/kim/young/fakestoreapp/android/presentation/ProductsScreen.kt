@@ -12,6 +12,8 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Clear
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -26,6 +28,7 @@ import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
@@ -94,9 +97,6 @@ fun ProductsScreen(viewModel: ProductsViewModel, navController: NavController) {
                     .clickable {
                         openDialog.value = true
                         coroutineScope.launch {
-                            if(state.searchProductName.isNotBlank()){
-                                viewModel.userIntent.send(ProductsIntent.RefreshSearchWord)
-                            }
                             viewModel.userIntent.send(ProductsIntent.GetFilterList)
                         }
                     }
@@ -201,7 +201,7 @@ fun SingleFilterRow(
             .fillMaxWidth()
             .padding(5.dp)
     ) {
-        val filterState = remember { mutableStateOf(state.presentFilterList.contains(filter))}
+        val filterState = remember { mutableStateOf(state.presentFilterList.contains(filter)) }
         Text(text = filter)
         Checkbox(
             checked = filterState.value,
