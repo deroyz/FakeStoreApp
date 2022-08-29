@@ -12,8 +12,6 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.material.*
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Clear
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -28,7 +26,6 @@ import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
@@ -38,11 +35,10 @@ import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import coil.size.Scale
 import kim.young.fakestoreapp.android.R
-import kim.young.fakestoreapp.android.presentation.util.DestinationScreen
 import kim.young.fakestoreapp.shared.domain.ProductDomainModel
-import kim.young.fakestoreapp.shared.presentation.products.ProductsIntent
-import kim.young.fakestoreapp.shared.presentation.products.ProductsViewModel
-import kim.young.fakestoreapp.shared.presentation.products.ProductsState
+import kim.young.fakestoreapp.shared.presentation.ProductsIntent
+import kim.young.fakestoreapp.shared.presentation.ProductsViewModel
+import kim.young.fakestoreapp.shared.presentation.ProductsState
 import kotlinx.coroutines.launch
 
 @Composable

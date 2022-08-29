@@ -1,6 +1,5 @@
-package kim.young.fakestoreapp.shared.presentation.products
+package kim.young.fakestoreapp.shared.presentation
 
-import kim.young.fakestoreapp.shared.data.remote.Category
 import kim.young.fakestoreapp.shared.domain.ProductDomainModel
 
 data class ProductsState(

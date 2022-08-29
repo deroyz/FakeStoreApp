@@ -1,22 +1,16 @@
-package kim.young.fakestoreapp.android.presentation.util
+package kim.young.fakestoreapp.android.presentation
 
-import android.os.Bundle
 import android.util.Log
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.toArgb
 import androidx.navigation.NavController
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import kim.young.fakestoreapp.android.presentation.DetailScreen
-import kim.young.fakestoreapp.android.presentation.ProductsScreen
 import kim.young.fakestoreapp.shared.Parcelable
-import kim.young.fakestoreapp.shared.domain.ProductDomainModel
-import kim.young.fakestoreapp.shared.presentation.products.ProductsViewModel
+import kim.young.fakestoreapp.shared.presentation.ProductsViewModel
 import org.koin.androidx.compose.inject
 
 
@@ -34,7 +28,8 @@ fun NavHostEntry() {
         composable(DestinationScreen.Products.route) {
             ProductsScreen(viewModel = viewModel, navController = navController)
         }
-        composable(DestinationScreen.Detail.route,
+        composable(
+            DestinationScreen.Detail.route,
             arguments = listOf(
                 navArgument("productId") {
                     type = NavType.IntType

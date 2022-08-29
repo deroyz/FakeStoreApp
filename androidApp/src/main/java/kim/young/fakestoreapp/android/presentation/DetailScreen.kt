@@ -4,7 +4,6 @@ import android.util.Log
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.MaterialTheme
@@ -27,11 +26,9 @@ import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import coil.size.Scale
 import kim.young.fakestoreapp.shared.domain.ProductDomainModel
-import kim.young.fakestoreapp.shared.presentation.products.ProductsIntent
-import kim.young.fakestoreapp.shared.presentation.products.ProductsViewModel
-import kotlinx.coroutines.coroutineScope
+import kim.young.fakestoreapp.shared.presentation.ProductsIntent
+import kim.young.fakestoreapp.shared.presentation.ProductsViewModel
 import kotlinx.coroutines.launch
-import org.koin.androidx.compose.inject
 
 @Composable
 fun DetailScreen(viewModel: ProductsViewModel, navController: NavController, productId: Int) {

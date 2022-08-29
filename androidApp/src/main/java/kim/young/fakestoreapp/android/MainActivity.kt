@@ -7,7 +7,7 @@ import androidx.activity.compose.setContent
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
-import kim.young.fakestoreapp.android.presentation.util.NavHostEntry
+import kim.young.fakestoreapp.android.presentation.NavHostEntry
 import kim.young.fakestoreapp.android.theme.FakeStoreAppTheme
 
 class MainActivity : ComponentActivity() {

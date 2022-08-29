@@ -6,10 +6,20 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.OutlinedButton
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.State
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.produceState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.font.Font
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import kim.young.fakestoreapp.shared.presentation.products.ProductsState
+import androidx.compose.ui.unit.sp
+import kim.young.fakestoreapp.android.util.ConnectionState
+import kim.young.fakestoreapp.android.util.currentConnectivityState
+import kim.young.fakestoreapp.android.util.observeConnectivityAsFlow
+import kim.young.fakestoreapp.shared.presentation.ProductsState
 
 @Composable
 fun Empty(
@@ -41,10 +51,9 @@ fun Empty(
 }
 
 
-
 @Composable
 fun Error(
-  state: ProductsState
+    state: ProductsState
 ) {
     Column(
         modifier = Modifier.fillMaxSize(),
@@ -71,6 +80,28 @@ fun Loading() {
 
         CircularProgressIndicator()
 
+    }
+}
+
+@Composable
+fun ConnectivityState(): State<ConnectionState> {
+    val context = LocalContext.current
+    return produceState(context.currentConnectivityState) {
+        context.observeConnectivityAsFlow().collect {
+            value = it
+        }
+    }
+}
+
+@Composable
+fun Network() {
+    val connection by ConnectivityState()
+    Column(Modifier.fillMaxSize(), Arrangement.Center, Alignment.CenterHorizontally) {
+        if(connection == ConnectionState.Available){
+        Text(text = "Back To Online", fontSize = 25.sp, fontWeight = FontWeight.Bold)
+        }else{
+            Text(text = "Back To Offline", fontSize = 25.sp, fontWeight = FontWeight.Bold)
+        }
     }
 }
 

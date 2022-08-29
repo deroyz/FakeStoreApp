@@ -1,4 +1,4 @@
-package kim.young.fakestoreapp.shared.presentation.products
+package kim.young.fakestoreapp.shared.presentation
 
 sealed class ProductsIntent {
     // Products screen entry

@@ -1,4 +1,4 @@
-package kim.young.fakestoreapp.shared.presentation.products
+package kim.young.fakestoreapp.shared.presentation
 
 import dev.icerock.moko.mvvm.viewmodel.ViewModel
 import kim.young.fakestoreapp.shared.domain.usecase.GetProductListUseCase
