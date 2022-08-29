@@ -50,7 +50,6 @@ fun Empty(
     }
 }
 
-
 @Composable
 fun Error(
     state: ProductsState

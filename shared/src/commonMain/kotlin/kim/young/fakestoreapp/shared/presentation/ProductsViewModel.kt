@@ -42,10 +42,6 @@ class ProductsViewModel(
 
         val currentFilterList = state.value.presentFilterList
         val isFilterUpdated = currentFilterList.contains(filter)
-//        state.value.copy(
-//            isLoading = true,
-//            isSuccess = false
-//        )
 
         viewModelScope.launch {
             if (isFilterUpdated) {
@@ -71,10 +67,6 @@ class ProductsViewModel(
         println("===============================================> Called getProductList")
 
         viewModelScope.launch {
-//            state.value.copy(
-//                isLoading = true,
-//                isSuccess = false
-//            )
             if (state.value.presentProductList.isEmpty()) {
                 println("===============================================> Called getProductList, presentProductList Empty")
 
@@ -95,7 +87,7 @@ class ProductsViewModel(
                                 state.value.copy(
                                     isLoading = false,
                                     isSuccess = false,
-                                    error = Error(true, dataState.error.message),
+                                    error = Error(true, "No internet connection"),
                                 )
                             )
                         }
@@ -139,29 +131,13 @@ class ProductsViewModel(
 
     private fun searchByName() {
         println("===============================================> Called SearchByName ")
-        val name = state.value.searchProductName
-//        state.value.copy(
-//            isLoading = true,
-//            isSuccess = false
-//        )
-        viewModelScope.launch {
-            val allProductList = state.value.allProductList
-            val presentProductList = allProductList.asFlow().filter {
-                it.title?.contains(name, ignoreCase = true) == true
-            }.toList()
 
-            state.emit(
-                state.value.copy(
-                    isLoading = false,
-                    isSuccess = true,
-                    presentProductList = presentProductList
-                )
-            )
-        }
+        applyNewFilter()
     }
 
     fun updateDetailProductId(id: Int) {
         println("===============================================> Called updateDetailProductId Id: $id")
+
         viewModelScope.launch {
             state.emit(
                 state.value.copy(
@@ -175,13 +151,8 @@ class ProductsViewModel(
 
     fun getDetailProduct() {
         println("===============================================> Called getDetailProduct")
-//        state.value.copy(
-//            isLoading = true,
-//            isSuccess = false
-//        )
 
         val detailProductId = state.value.detailProductId
-
         viewModelScope.launch {
             val detailProduct =
                 state.value.allProductList.last { it.id == detailProductId }
@@ -197,10 +168,6 @@ class ProductsViewModel(
 
     private fun getFilterList() {
         println("===============================================> Called getCurrentFilterList")
-//        state.value.copy(
-//            isLoading = true,
-//            isSuccess = false,
-//        )
 
         val allProductList = state.value.allProductList
         val presentProductList = state.value.presentProductList
@@ -237,15 +204,12 @@ class ProductsViewModel(
     private fun applyNewFilter() {
         println("===============================================> Called applyNewFilter ")
 
+        val name = state.value.searchProductName
         val checkedFilter = state.value.presentFilterList
-//        state.value.copy(
-//            isLoading = true,
-//            isSuccess = false
-//        )
         viewModelScope.launch {
-            val presentProductList = state.value.presentProductList
-            val filteredProductList = presentProductList.filter { product ->
-                checkedFilter.contains(product.category)
+            val allProductList = state.value.allProductList
+            val filteredProductList = allProductList.filter { product ->
+                checkedFilter.contains(product.category) &&  product.title?.contains(name, ignoreCase = true) == true
             }
             state.emit(
                 state.value.copy(
