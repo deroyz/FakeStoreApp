@@ -6,7 +6,6 @@ sealed class ProductsIntent {
 
     // Search by name
     object SearchProductListByName : ProductsIntent()
-    object RefreshSearchWord: ProductsIntent()
 
     // Detail screen entry
     object GetDetailProduct : ProductsIntent()

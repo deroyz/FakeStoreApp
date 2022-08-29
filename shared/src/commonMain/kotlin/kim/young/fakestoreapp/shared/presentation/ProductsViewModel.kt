@@ -20,8 +20,8 @@ class ProductsViewModel(
                 when (collector) {
                     is ProductsIntent.GetProductList -> getProductList()
                     is ProductsIntent.GetDetailProduct -> getDetailProduct()
-                    is ProductsIntent.GetFilterList -> getFilterList()
                     is ProductsIntent.SearchProductListByName -> searchByName()
+                    is ProductsIntent.GetFilterList -> getFilterList()
                     is ProductsIntent.ApplyNewFilter -> applyNewFilter()
                     else->{}
                 }
@@ -178,32 +178,12 @@ class ProductsViewModel(
 
         viewModelScope.launch {
             val detailProduct =
-                state.value.allProductList.asFlow().filter { it.id == detailProductId }.last()
+                state.value.allProductList.last { it.id == detailProductId }
             state.emit(
                 state.value.copy(
                     isLoading = false,
                     isSuccess = true,
                     detailProduct = detailProduct
-                )
-            )
-        }
-        /*viewModelScope.launch {
-
-            state.emit(state.value.copy(
-                presentProductList = state.value.allProductList.filter {
-                    it.title?.contains(name, ignoreCase = true) == true
-                }
-            ))
-        }*/
-    }
-
-    private fun refreshSearch() {
-        viewModelScope.launch {
-            state.emit(
-                state.value.copy(
-                    isLoading = true,
-                    isSuccess = false,
-                    searchProductName = ""
                 )
             )
         }
@@ -259,9 +239,9 @@ class ProductsViewModel(
         )
         viewModelScope.launch {
             val presentProductList = state.value.presentProductList
-            val filteredProductList = presentProductList.asFlow().filter { product ->
+            val filteredProductList = presentProductList.filter { product ->
                 checkedFilter.contains(product.category)
-            }.toList()
+            }
 
             state.emit(
                 state.value.copy(
